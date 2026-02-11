@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>ConcertBet — Weekend Concert Trip Generator | Find the Best Concert to Travel To This Weekend</title>
+    <meta name="description" content="ConcertBet shows you the best concerts you can realistically travel to this weekend. Discover weekend concert trips within 300km or 800km, under $500, with full nightlife pairings. Bet you won't go.">
+    <meta name="keywords" content="weekend concert trip, last minute concert travel, travel for concerts, concert nightlife weekend, concert travel under $500, concert trip generator, best concerts this weekend near me, impulse concert trip, concert weekend planner">
+    <meta name="author" content="ConcertBet">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://concertbet.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://concertbet.com/">
+    <meta property="og:title" content="ConcertBet — The Weekend Concert Trip Generator">
+    <meta property="og:description" content="What concert should you travel to this weekend? ConcertBet finds the best concerts within your range, scores them by feasibility, nightlife, and urgency — then helps you book the whole trip.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1200&h=630&fit=crop&q=80">
+    <meta property="og:site_name" content="ConcertBet">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ConcertBet — Weekend Concert Trip Generator">
+    <meta name="twitter:description" content="Find the best concert you can realistically travel to this weekend. Scored by feasibility, nightlife payoff, and urgency.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1200&h=630&fit=crop&q=80">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ConcertBet",
+        "url": "https://concertbet.com",
+        "description": "The Weekend Concert Trip Generator. Find the best concerts you can realistically travel to this weekend.",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://concertbet.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ConcertBet",
+        "url": "https://concertbet.com",
+        "logo": "https://concertbet.com/images/logo.png",
+        "description": "ConcertBet is a global travel decision engine for weekend concert trips.",
+        "sameAs": []
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What concert should I travel to this weekend?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "ConcertBet analyzes every concert happening within your travel range this weekend and scores each one by feasibility (can you realistically get there and back?), quality (is the artist worth traveling for?), urgency (will you get another chance?), and nightlife payoff (what's the city like after the show?). Enter your location and budget, and ConcertBet shows you ranked trips you can actually pull off in 48-72 hours."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the best concerts within 300km this weekend?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Within a 300km radius, you can typically do a same-day or one-night concert trip. ConcertBet filters every concert in your 300km zone, checks ticket availability, calculates drive or train time, and pairs each show with nearby nightlife and safe return options. You'll see a ranked list of trips you can do without taking Monday off."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the best concerts within 800km this weekend?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "An 800km range opens up flight-distance concerts — perfect for a 48-72 hour weekend trip. ConcertBet finds concerts within 800km, factors in flight or train costs, checks hotel availability, and builds a complete trip package: travel, tickets, accommodation, and nightlife. This is the sweet spot for spontaneous concert travel."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is it worth traveling to see a specific artist this weekend?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "ConcertBet's feasibility scoring tells you exactly whether a trip is worth it. We calculate total cost (tickets + travel + hotel), time investment, the venue's reputation, the city's nightlife scene, and whether you'll get another chance to see them nearby soon. If the score is high and the trip fits your budget, we say: bet you won't go."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What's the best last-minute concert trip I can book right now?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "ConcertBet's urgency ranking system surfaces concerts happening in the next 24-72 hours that still have tickets, available travel options, and hotel rooms. We prioritize trips where everything is still bookable and feasible. The best last-minute trips are ones where the artist is incredible, the city is electric, and the whole weekend comes together fast."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What concerts can I travel to for under $500 this weekend?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "ConcertBet's budget mode calculates the total all-in cost of every concert trip: tickets, transportation, one night of accommodation, and a nightlife budget. We show you every trip under $500 ranked by value — meaning the best experience per dollar. Many incredible concert weekends cost less than you'd think."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What city should I fly to for the best concert + nightlife combo this weekend?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "ConcertBet pairs every concert with the city's nightlife depth score. Cities like Berlin, London, Toronto, Mexico City, and Tokyo have world-class nightlife that transforms a concert into a full weekend experience. We build pregame-to-afterparty routes so your night doesn't end when the show does."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Where can I go this weekend for a full concert + afterparty experience?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "ConcertBet's Venue + Night Pairing system maps out the complete experience: pregame bars near the venue, the show itself, afterparty spots that match the vibe, and safe return logistics. We know which venues are near the best late-night districts and which cities keep the energy going until sunrise."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What's the best one-night concert trip I can realistically pull off?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A one-night concert trip means leaving after work, catching the show, experiencing the city's nightlife, and getting home by Sunday. ConcertBet's safe return logic ensures every one-night trip is actually doable — factoring in last trains, early flights, and drive-back times so you don't sacrifice your whole weekend."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What concert trip will feel like a story in five years?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The trips that become legendary stories share common traits: an artist you love in a city that surprises you, a venue with character, a night that extends past the encore, and the feeling that you almost didn't go. ConcertBet's scoring identifies these high-potential experiences — shows in special venues, in cities with deep nightlife, at moments you won't get back."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I plan a last-minute concert trip without overthinking it?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "That's exactly what ConcertBet is built for. Instead of checking five different sites for tickets, flights, hotels, and restaurants, ConcertBet scores and ranks every possible concert trip from your location. Pick the top-ranked trip, book through our integrated links, and go. We handle the overthinking so you can handle the impulse."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What concert trip can I pull off without taking Monday off?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "ConcertBet's safe return logic is built for exactly this. We filter for concerts where you can arrive Saturday, see the show, enjoy the nightlife, and be home by Sunday night. Every trip includes return time calculations so you know you'll make it to work Monday morning."
+                }
+            }
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "ConcertBet",
+        "applicationCategory": "TravelApplication",
+        "operatingSystem": "Web",
+        "description": "Weekend concert trip generator that scores concerts by feasibility, nightlife payoff, and urgency.",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Animated Background Canvas -->
+    <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+    <!-- Navigation -->
+    <nav class="nav" id="mainNav" role="navigation" aria-label="Main navigation">
+        <div class="nav__container">
+            <a href="/" class="nav__logo" aria-label="ConcertBet Home">
+                <span class="nav__logo-icon">&#9835;</span>
+                <span class="nav__logo-text">Concert<span class="accent">Bet</span></span>
+            </a>
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </button>
+            <div class="nav__menu" id="navMenu" role="menubar">
+                <a href="coming-soon.html" class="nav__link" role="menuitem">This Weekend</a>
+                <a href="coming-soon.html" class="nav__link" role="menuitem">Cities</a>
+                <a href="coming-soon.html" class="nav__link" role="menuitem">Artists</a>
+                <a href="coming-soon.html" class="nav__link" role="menuitem">Bet Modes</a>
+                <a href="#faq" class="nav__link" role="menuitem">FAQ</a>
+                <a href="coming-soon.html" class="nav__cta" role="menuitem">Find My Trip</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero__bg">
+            <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1920&q=80&fit=crop"
+                 alt="Electric concert crowd with dramatic stage lighting"
+                 class="hero__bg-img"
+                 loading="eager"
+                 fetchpriority="high">
+            <div class="hero__bg-overlay"></div>
+        </div>
+        <div class="hero__content">
+            <div class="hero__badge reveal">
+                <span class="hero__badge-dot"></span>
+                Live This Weekend
+            </div>
+            <h1 class="hero__title reveal">
+                <span class="hero__title-line">What concert should</span>
+                <span class="hero__title-line">you <span class="gradient-text">travel to</span></span>
+                <span class="hero__title-line">this weekend?</span>
+            </h1>
+            <p class="hero__subtitle reveal">
+                ConcertBet finds the best concerts you can <strong>realistically</strong> travel to in the next 48&ndash;72 hours &mdash; scored by feasibility, nightlife payoff, and urgency. Then helps you book the entire trip.
+            </p>
+            <div class="hero__actions reveal">
+                <a href="coming-soon.html" class="btn btn--primary btn--lg">
+                    <span>Find My Concert Trip</span>
+                    <svg class="btn__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#how-it-works" class="btn btn--ghost btn--lg">See How It Works</a>
+            </div>
+            <div class="hero__stats reveal">
+                <div class="hero__stat">
+                    <span class="hero__stat-number" data-count="2847">0</span>
+                    <span class="hero__stat-label">Concerts This Weekend</span>
+                </div>
+                <div class="hero__stat-divider"></div>
+                <div class="hero__stat">
+                    <span class="hero__stat-number" data-count="186">0</span>
+                    <span class="hero__stat-label">Cities Worldwide</span>
+                </div>
+                <div class="hero__stat-divider"></div>
+                <div class="hero__stat">
+                    <span class="hero__stat-number" data-count="94">0</span>
+                    <span class="hero__stat-label percent">% Return Sunday</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll" aria-hidden="true">
+            <div class="hero__scroll-line"></div>
+        </div>
+    </header>
+
+    <!-- Tagline Banner -->
+    <section class="tagline" aria-label="Tagline">
+        <div class="tagline__track">
+            <div class="tagline__content">
+                <span>BET YOU WON'T GO</span>
+                <span class="tagline__dot">&#9679;</span>
+                <span>WEEKEND CONCERT TRIPS</span>
+                <span class="tagline__dot">&#9679;</span>
+                <span>48&ndash;72 HOURS</span>
+                <span class="tagline__dot">&#9679;</span>
+                <span>FIND &middot; SCORE &middot; BOOK &middot; GO</span>
+                <span class="tagline__dot">&#9679;</span>
+                <span>BET YOU WON'T GO</span>
+                <span class="tagline__dot">&#9679;</span>
+                <span>WEEKEND CONCERT TRIPS</span>
+                <span class="tagline__dot">&#9679;</span>
+                <span>48&ndash;72 HOURS</span>
+                <span class="tagline__dot">&#9679;</span>
+                <span>FIND &middot; SCORE &middot; BOOK &middot; GO</span>
+                <span class="tagline__dot">&#9679;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works" aria-labelledby="how-heading">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">The System</span>
+                <h2 class="section-title" id="how-heading">Three Steps to <span class="gradient-text">Legendary</span></h2>
+                <p class="section-subtitle">ConcertBet isn't a calendar. It's a decision engine. Tell us where you are and when you're free &mdash; we'll tell you where to go.</p>
+            </div>
+            <div class="steps">
+                <div class="step reveal">
+                    <div class="step__number">01</div>
+                    <div class="step__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                    </div>
+                    <h3 class="step__title">Set Your Range</h3>
+                    <p class="step__text">Enter your city and choose your travel radius &mdash; 300km for a quick trip, 800km for a full weekend adventure. Set your budget and ConcertBet scans every concert in your zone.</p>
+                </div>
+                <div class="step__connector" aria-hidden="true">
+                    <svg width="80" height="24" viewBox="0 0 80 24"><path d="M0 12h70M60 4l10 8-10 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div class="step reveal">
+                    <div class="step__number">02</div>
+                    <div class="step__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                    </div>
+                    <h3 class="step__title">Get Scored Trips</h3>
+                    <p class="step__text">Every concert is scored on four dimensions: <strong>quality</strong> (is the artist worth it?), <strong>feasibility</strong> (can you pull it off?), <strong>urgency</strong> (will you get another chance?), and <strong>nightlife payoff</strong> (how's the city after?).</p>
+                </div>
+                <div class="step__connector" aria-hidden="true">
+                    <svg width="80" height="24" viewBox="0 0 80 24"><path d="M0 12h70M60 4l10 8-10 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div class="step reveal">
+                    <div class="step__number">03</div>
+                    <div class="step__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    </div>
+                    <h3 class="step__title">Book &amp; Go</h3>
+                    <p class="step__text">Pick your trip and book everything in one flow &mdash; tickets, travel, hotel, and nightlife spots. ConcertBet builds the full route: pregame, show, afterparty, safe return. No overthinking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weekend Discovery -->
+    <section class="discovery" id="discovery" aria-labelledby="discovery-heading">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Weekend Trip Discovery</span>
+                <h2 class="section-title" id="discovery-heading">How Far Will You <span class="gradient-text">Go?</span></h2>
+                <p class="section-subtitle">The best concerts within your range, scored and ready to book. Choose your adventure distance.</p>
+            </div>
+            <div class="discovery__grid">
+                <!-- 300km Card -->
+                <a href="coming-soon.html" class="discovery__card reveal" aria-label="Concerts within 300 kilometers">
+                    <div class="discovery__card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=80&fit=crop"
+                             alt="Intimate concert venue with vibrant purple and blue stage lights illuminating the crowd"
+                             class="discovery__card-img" loading="lazy" width="800" height="500">
+                        <div class="discovery__card-overlay"></div>
+                    </div>
+                    <div class="discovery__card-content">
+                        <div class="discovery__card-range">
+                            <span class="discovery__card-km">300</span>
+                            <span class="discovery__card-unit">km</span>
+                        </div>
+                        <h3 class="discovery__card-title">Quick Strike</h3>
+                        <p class="discovery__card-desc">Same-day or one-night trips. Drive, train, or short hop flight. See the show, hit the afterparty, wake up in your own bed. Perfect for spontaneous weekends.</p>
+                        <div class="discovery__card-meta">
+                            <span class="discovery__card-tag">One Night</span>
+                            <span class="discovery__card-tag">No Monday Off</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- 800km Card -->
+                <a href="coming-soon.html" class="discovery__card discovery__card--featured reveal" aria-label="Concerts within 800 kilometers">
+                    <div class="discovery__card-badge">Most Popular</div>
+                    <div class="discovery__card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=800&q=80&fit=crop"
+                             alt="Massive outdoor music festival with thousands of fans under dramatic red lighting"
+                             class="discovery__card-img" loading="lazy" width="800" height="500">
+                        <div class="discovery__card-overlay"></div>
+                    </div>
+                    <div class="discovery__card-content">
+                        <div class="discovery__card-range">
+                            <span class="discovery__card-km">800</span>
+                            <span class="discovery__card-unit">km</span>
+                        </div>
+                        <h3 class="discovery__card-title">Full Weekend</h3>
+                        <p class="discovery__card-desc">The sweet spot for concert travel. Fly or take a fast train to a new city. Two nights, full immersion: pregame, show, afterparty, and a lazy morning before heading home.</p>
+                        <div class="discovery__card-meta">
+                            <span class="discovery__card-tag">48&ndash;72 Hours</span>
+                            <span class="discovery__card-tag">Flight Distance</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Budget Card -->
+                <a href="coming-soon.html" class="discovery__card reveal" aria-label="Concert trips under 500 dollars">
+                    <div class="discovery__card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=800&q=80&fit=crop"
+                             alt="Energetic concert performer on stage with dramatic lighting and enthusiastic crowd"
+                             class="discovery__card-img" loading="lazy" width="800" height="500">
+                        <div class="discovery__card-overlay"></div>
+                    </div>
+                    <div class="discovery__card-content">
+                        <div class="discovery__card-range">
+                            <span class="discovery__card-km">$500</span>
+                            <span class="discovery__card-unit">max</span>
+                        </div>
+                        <h3 class="discovery__card-title">Budget Bet</h3>
+                        <p class="discovery__card-desc">All-in under $500: tickets, travel, one night, nightlife. ConcertBet calculates the total cost and ranks trips by value &mdash; the best experience per dollar spent.</p>
+                        <div class="discovery__card-meta">
+                            <span class="discovery__card-tag">All-In Price</span>
+                            <span class="discovery__card-tag">Best Value</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scoring System -->
+    <section class="scoring" id="scoring" aria-labelledby="scoring-heading">
+        <div class="container">
+            <div class="scoring__layout">
+                <div class="scoring__info reveal">
+                    <span class="section-tag">Concert Feasibility Scoring</span>
+                    <h2 class="section-title" id="scoring-heading">Every Trip Gets <span class="gradient-text">Scored</span></h2>
+                    <p class="scoring__desc">Not all concerts are created equal for travel. ConcertBet's proprietary scoring system evaluates every concert trip across four critical dimensions so you never waste a weekend on the wrong show.</p>
+                    <div class="scoring__metrics">
+                        <div class="scoring__metric">
+                            <div class="scoring__metric-header">
+                                <span class="scoring__metric-label">Quality</span>
+                                <span class="scoring__metric-value">Artist + Venue + Setlist</span>
+                            </div>
+                            <div class="scoring__bar">
+                                <div class="scoring__bar-fill" data-width="92" style="--bar-color: #7c3aed;"></div>
+                            </div>
+                        </div>
+                        <div class="scoring__metric">
+                            <div class="scoring__metric-header">
+                                <span class="scoring__metric-label">Feasibility</span>
+                                <span class="scoring__metric-value">Travel + Cost + Time</span>
+                            </div>
+                            <div class="scoring__bar">
+                                <div class="scoring__bar-fill" data-width="87" style="--bar-color: #ec4899;"></div>
+                            </div>
+                        </div>
+                        <div class="scoring__metric">
+                            <div class="scoring__metric-header">
+                                <span class="scoring__metric-label">Urgency</span>
+                                <span class="scoring__metric-value">Rarity + Ticket Scarcity</span>
+                            </div>
+                            <div class="scoring__bar">
+                                <div class="scoring__bar-fill" data-width="78" style="--bar-color: #f59e0b;"></div>
+                            </div>
+                        </div>
+                        <div class="scoring__metric">
+                            <div class="scoring__metric-header">
+                                <span class="scoring__metric-label">Nightlife Payoff</span>
+                                <span class="scoring__metric-value">City Depth + Afterparty</span>
+                            </div>
+                            <div class="scoring__bar">
+                                <div class="scoring__bar-fill" data-width="95" style="--bar-color: #06b6d4;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scoring__visual reveal">
+                    <div class="scoring__card">
+                        <div class="scoring__card-header">
+                            <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=400&q=80&fit=crop"
+                                 alt="Massive crowd at an outdoor concert with colorful stage production"
+                                 class="scoring__card-img" loading="lazy" width="400" height="200">
+                            <div class="scoring__card-overlay"></div>
+                            <div class="scoring__card-score">
+                                <span class="scoring__card-score-num">94</span>
+                                <span class="scoring__card-score-label">Trip Score</span>
+                            </div>
+                        </div>
+                        <div class="scoring__card-body">
+                            <div class="scoring__card-artist">Featured Artist</div>
+                            <div class="scoring__card-venue">The O2, London</div>
+                            <div class="scoring__card-details">
+                                <div class="scoring__card-detail">
+                                    <span class="scoring__card-detail-label">Distance</span>
+                                    <span class="scoring__card-detail-value">340 km</span>
+                                </div>
+                                <div class="scoring__card-detail">
+                                    <span class="scoring__card-detail-label">All-In Cost</span>
+                                    <span class="scoring__card-detail-value">$380</span>
+                                </div>
+                                <div class="scoring__card-detail">
+                                    <span class="scoring__card-detail-label">Return By</span>
+                                    <span class="scoring__card-detail-value">Sun 6PM</span>
+                                </div>
+                            </div>
+                            <div class="scoring__card-tags">
+                                <span class="scoring__card-tag scoring__card-tag--hot">High Urgency</span>
+                                <span class="scoring__card-tag">Great Nightlife</span>
+                                <span class="scoring__card-tag">Tickets Left</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- City Hubs -->
+    <section class="cities" id="cities" aria-labelledby="cities-heading">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">City Hubs</span>
+                <h2 class="section-title" id="cities-heading">The World's Best <span class="gradient-text">Concert Cities</span></h2>
+                <p class="section-subtitle">Every city has its own concert DNA. ConcertBet maps the best venues, nightlife corridors, and weekend travel routes for each hub city worldwide.</p>
+            </div>
+            <div class="cities__grid">
+                <a href="coming-soon.html" class="cities__card cities__card--lg reveal" aria-label="ConcertBet London">
+                    <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=900&q=80&fit=crop"
+                         alt="London city skyline at night with Tower Bridge illuminated over the Thames"
+                         class="cities__card-img" loading="lazy" width="900" height="600">
+                    <div class="cities__card-overlay"></div>
+                    <div class="cities__card-content">
+                        <span class="cities__card-label">ConcertBet</span>
+                        <h3 class="cities__card-name">London</h3>
+                        <p class="cities__card-meta">O2 Arena &middot; Brixton Academy &middot; Fabric &middot; 240+ shows/week</p>
+                    </div>
+                </a>
+                <a href="coming-soon.html" class="cities__card reveal" aria-label="ConcertBet Berlin">
+                    <img src="https://images.unsplash.com/photo-1560969184-10fe8719e047?w=600&q=80&fit=crop"
+                         alt="Berlin Brandenburg Gate illuminated at twilight with dramatic clouds"
+                         class="cities__card-img" loading="lazy" width="600" height="400">
+                    <div class="cities__card-overlay"></div>
+                    <div class="cities__card-content">
+                        <span class="cities__card-label">ConcertBet</span>
+                        <h3 class="cities__card-name">Berlin</h3>
+                        <p class="cities__card-meta">Berghain &middot; Tempodrom &middot; Techno Capital</p>
+                    </div>
+                </a>
+                <a href="coming-soon.html" class="cities__card reveal" aria-label="ConcertBet Toronto">
+                    <img src="https://images.unsplash.com/photo-1517090504332-8c27b6fb2ef9?w=600&q=80&fit=crop"
+                         alt="Toronto downtown skyline at dusk with CN Tower rising above the city"
+                         class="cities__card-img" loading="lazy" width="600" height="400">
+                    <div class="cities__card-overlay"></div>
+                    <div class="cities__card-content">
+                        <span class="cities__card-label">ConcertBet</span>
+                        <h3 class="cities__card-name">Toronto</h3>
+                        <p class="cities__card-meta">Scotiabank Arena &middot; Velvet Underground &middot; King West</p>
+                    </div>
+                </a>
+                <a href="coming-soon.html" class="cities__card reveal" aria-label="ConcertBet New York">
+                    <img src="https://images.unsplash.com/photo-1534430480872-3498386e7856?w=600&q=80&fit=crop"
+                         alt="New York City skyline at night with illuminated skyscrapers and city lights"
+                         class="cities__card-img" loading="lazy" width="600" height="400">
+                    <div class="cities__card-overlay"></div>
+                    <div class="cities__card-content">
+                        <span class="cities__card-label">ConcertBet</span>
+                        <h3 class="cities__card-name">New York</h3>
+                        <p class="cities__card-meta">MSG &middot; Brooklyn Steel &middot; Lower East Side</p>
+                    </div>
+                </a>
+                <a href="coming-soon.html" class="cities__card cities__card--lg reveal" aria-label="ConcertBet Tokyo">
+                    <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=900&q=80&fit=crop"
+                         alt="Tokyo vibrant neon-lit streets at night in Shibuya with crowds crossing"
+                         class="cities__card-img" loading="lazy" width="900" height="600">
+                    <div class="cities__card-overlay"></div>
+                    <div class="cities__card-content">
+                        <span class="cities__card-label">ConcertBet</span>
+                        <h3 class="cities__card-name">Tokyo</h3>
+                        <p class="cities__card-meta">Budokan &middot; Liquid Room &middot; Shibuya &middot; 180+ shows/week</p>
+                    </div>
+                </a>
+                <a href="coming-soon.html" class="cities__card reveal" aria-label="ConcertBet Mexico City">
+                    <img src="https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?w=600&q=80&fit=crop"
+                         alt="Mexico City aerial view at golden hour with Palace of Fine Arts visible"
+                         class="cities__card-img" loading="lazy" width="600" height="400">
+                    <div class="cities__card-overlay"></div>
+                    <div class="cities__card-content">
+                        <span class="cities__card-label">ConcertBet</span>
+                        <h3 class="cities__card-name">Mexico City</h3>
+                        <p class="cities__card-meta">Foro Sol &middot; Auditorio Nacional &middot; Roma Norte</p>
+                    </div>
+                </a>
+                <a href="coming-soon.html" class="cities__card reveal" aria-label="ConcertBet Paris">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&q=80&fit=crop"
+                         alt="Paris Eiffel Tower at night glowing golden against the dark sky"
+                         class="cities__card-img" loading="lazy" width="600" height="400">
+                    <div class="cities__card-overlay"></div>
+                    <div class="cities__card-content">
+                        <span class="cities__card-label">ConcertBet</span>
+                        <h3 class="cities__card-name">Paris</h3>
+                        <p class="cities__card-meta">Accor Arena &middot; Olympia &middot; Pigalle</p>
+                    </div>
+                </a>
+            </div>
+            <div class="cities__more reveal">
+                <a href="coming-soon.html" class="btn btn--outline">Explore All City Hubs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bet Modes -->
+    <section class="modes" id="modes" aria-labelledby="modes-heading">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Bet Modes</span>
+                <h2 class="section-title" id="modes-heading">How Do You <span class="gradient-text">Travel?</span></h2>
+                <p class="section-subtitle">Not every concert trip is the same. Choose your mode and ConcertBet adjusts scoring to match your vibe &mdash; from budget solo adventures to legendary group weekends.</p>
+            </div>
+            <div class="modes__grid">
+                <a href="coming-soon.html" class="modes__card reveal" aria-label="Low Budget mode">
+                    <div class="modes__card-icon" style="--mode-color: #22c55e;">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <h3 class="modes__card-title">Low Budget</h3>
+                    <p class="modes__card-desc">Maximum experience, minimum spend. Bus rides, hostels, standing tickets, street food pregame. Under $200 all-in trips that still hit different.</p>
+                </a>
+                <a href="coming-soon.html" class="modes__card reveal" aria-label="One Night mode">
+                    <div class="modes__card-icon" style="--mode-color: #f59e0b;">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <h3 class="modes__card-title">One Night</h3>
+                    <p class="modes__card-desc">Leave Friday, back Saturday. The tightest possible trip window. ConcertBet's safe return logic guarantees you make it home without taking Monday off.</p>
+                </a>
+                <a href="coming-soon.html" class="modes__card reveal" aria-label="Dance mode">
+                    <div class="modes__card-icon" style="--mode-color: #ec4899;">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                    </div>
+                    <h3 class="modes__card-title">Dance</h3>
+                    <p class="modes__card-desc">EDM, house, techno, and everything that moves. Prioritizes clubs, warehouse parties, and cities where the night doesn't end until sunrise.</p>
+                </a>
+                <a href="coming-soon.html" class="modes__card reveal" aria-label="Singalong mode">
+                    <div class="modes__card-icon" style="--mode-color: #7c3aed;">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+                    </div>
+                    <h3 class="modes__card-title">Singalong</h3>
+                    <p class="modes__card-desc">Anthems, ballads, and every-word-known energy. Pop, rock, and indie shows where the crowd IS the performance. Karaoke afterparty included.</p>
+                </a>
+                <a href="coming-soon.html" class="modes__card reveal" aria-label="Solo mode">
+                    <div class="modes__card-icon" style="--mode-color: #06b6d4;">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <h3 class="modes__card-title">Solo</h3>
+                    <p class="modes__card-desc">No coordination, no compromise. Solo trips optimized for freedom &mdash; easy navigation, social venues, and cities where going alone feels natural.</p>
+                </a>
+                <a href="coming-soon.html" class="modes__card reveal" aria-label="Date Night mode">
+                    <div class="modes__card-icon" style="--mode-color: #ef4444;">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    </div>
+                    <h3 class="modes__card-title">Date</h3>
+                    <p class="modes__card-desc">Romantic venues, intimate shows, dinner-worthy neighborhoods, and hotels that impress. Turn a concert trip into the best date of your life.</p>
+                </a>
+                <a href="coming-soon.html" class="modes__card reveal" aria-label="Friends mode">
+                    <div class="modes__card-icon" style="--mode-color: #f97316;">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3 class="modes__card-title">Friends</h3>
+                    <p class="modes__card-desc">Group logistics solved. Find concerts where you can get multiple tickets, nearby Airbnbs or hostels, and cities with nightlife that splits well across a crew.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Night Pairing -->
+    <section class="pairing" id="pairing" aria-labelledby="pairing-heading">
+        <div class="pairing__bg">
+            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1920&q=80&fit=crop"
+                 alt="Vibrant nightclub atmosphere with DJ performing under colorful laser lights"
+                 class="pairing__bg-img" loading="lazy">
+            <div class="pairing__bg-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Venue + Night Pairing</span>
+                <h2 class="section-title" id="pairing-heading">The Full <span class="gradient-text">Night Route</span></h2>
+                <p class="section-subtitle">A concert trip is more than the show. ConcertBet maps your complete night &mdash; from first drink to safe return &mdash; so you never waste a minute wondering what's next.</p>
+            </div>
+            <div class="pairing__timeline reveal">
+                <div class="pairing__phase">
+                    <div class="pairing__phase-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+                    </div>
+                    <div class="pairing__phase-num">01</div>
+                    <h3 class="pairing__phase-title">Pregame</h3>
+                    <p class="pairing__phase-desc">Best bars and restaurants within walking distance of the venue. Curated by vibe: cocktail bars for dates, dive bars for friends, wine bars for chill energy.</p>
+                    <span class="pairing__phase-time">6:00 PM &ndash; 8:00 PM</span>
+                </div>
+                <div class="pairing__connector" aria-hidden="true"></div>
+                <div class="pairing__phase">
+                    <div class="pairing__phase-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                    </div>
+                    <div class="pairing__phase-num">02</div>
+                    <h3 class="pairing__phase-title">The Show</h3>
+                    <p class="pairing__phase-desc">The main event. Venue details, entry tips, best spots in the crowd, and estimated set times so you time your arrival perfectly.</p>
+                    <span class="pairing__phase-time">8:00 PM &ndash; 11:00 PM</span>
+                </div>
+                <div class="pairing__connector" aria-hidden="true"></div>
+                <div class="pairing__phase">
+                    <div class="pairing__phase-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    </div>
+                    <div class="pairing__phase-num">03</div>
+                    <h3 class="pairing__phase-title">Afterparty</h3>
+                    <p class="pairing__phase-desc">Where the real night begins. Clubs, late-night venues, and underground spots near the venue that match the concert's energy. Dance, talk, or keep singing.</p>
+                    <span class="pairing__phase-time">11:00 PM &ndash; 3:00 AM</span>
+                </div>
+                <div class="pairing__connector" aria-hidden="true"></div>
+                <div class="pairing__phase">
+                    <div class="pairing__phase-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    </div>
+                    <div class="pairing__phase-num">04</div>
+                    <h3 class="pairing__phase-title">Safe Return</h3>
+                    <p class="pairing__phase-desc">Last trains, early flights, drive-back times, and hotel check-out schedules. ConcertBet's safe return logic ensures you make it home or to your bed on time.</p>
+                    <span class="pairing__phase-time">Get Home Sunday</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Trip Showcase -->
+    <section class="showcase" id="showcase" aria-labelledby="showcase-heading">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Weekend Concert Trips</span>
+                <h2 class="section-title" id="showcase-heading">Trips That Become <span class="gradient-text">Stories</span></h2>
+                <p class="section-subtitle">Real concert weekends scored and packaged. The kind of trips you'll still be talking about five years later.</p>
+            </div>
+            <div class="showcase__grid">
+                <a href="coming-soon.html" class="showcase__card reveal" aria-label="Concert trip to Berlin">
+                    <div class="showcase__card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=600&q=80&fit=crop"
+                             alt="Spectacular concert stage with massive light production and laser show over the audience"
+                             class="showcase__card-img" loading="lazy" width="600" height="400">
+                    </div>
+                    <div class="showcase__card-content">
+                        <div class="showcase__card-top">
+                            <span class="showcase__card-score">96</span>
+                            <span class="showcase__card-badge">This Weekend</span>
+                        </div>
+                        <h3 class="showcase__card-title">Techno Weekend in Berlin</h3>
+                        <p class="showcase__card-route">Pregame at Sisyphos &rarr; Show at Berghain &rarr; Afterparty at Tresor</p>
+                        <div class="showcase__card-stats">
+                            <span>$420 all-in</span>
+                            <span>&middot;</span>
+                            <span>48hr trip</span>
+                            <span>&middot;</span>
+                            <span>Back by Sunday</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="coming-soon.html" class="showcase__card reveal" aria-label="Concert trip to London">
+                    <div class="showcase__card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600&q=80&fit=crop"
+                             alt="Massive festival crowd with hands raised in the air under golden sunset lighting"
+                             class="showcase__card-img" loading="lazy" width="600" height="400">
+                    </div>
+                    <div class="showcase__card-content">
+                        <div class="showcase__card-top">
+                            <span class="showcase__card-score">91</span>
+                            <span class="showcase__card-badge">Selling Fast</span>
+                        </div>
+                        <h3 class="showcase__card-title">Arena Night in London</h3>
+                        <p class="showcase__card-route">Dinner at Shoreditch &rarr; O2 Arena &rarr; Late at Fabric</p>
+                        <div class="showcase__card-stats">
+                            <span>$490 all-in</span>
+                            <span>&middot;</span>
+                            <span>One night</span>
+                            <span>&middot;</span>
+                            <span>Train home Sat</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="coming-soon.html" class="showcase__card reveal" aria-label="Concert trip to Toronto">
+                    <div class="showcase__card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=600&q=80&fit=crop"
+                             alt="Energetic nightclub scene with colorful lights and a packed dance floor"
+                             class="showcase__card-img" loading="lazy" width="600" height="400">
+                    </div>
+                    <div class="showcase__card-content">
+                        <div class="showcase__card-top">
+                            <span class="showcase__card-score">88</span>
+                            <span class="showcase__card-badge">Best Value</span>
+                        </div>
+                        <h3 class="showcase__card-title">Indie Night in Toronto</h3>
+                        <p class="showcase__card-route">King West pregame &rarr; Velvet Underground &rarr; Late at CODA</p>
+                        <div class="showcase__card-stats">
+                            <span>$310 all-in</span>
+                            <span>&middot;</span>
+                            <span>72hr weekend</span>
+                            <span>&middot;</span>
+                            <span>Flight Sunday AM</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- AEO / FAQ Section -->
+    <section class="faq" id="faq" aria-labelledby="faq-heading">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Questions &amp; Answers</span>
+                <h2 class="section-title" id="faq-heading">Everything You Need to <span class="gradient-text">Know</span></h2>
+                <p class="section-subtitle">Real answers to the questions people ask about weekend concert travel. No fluff, just the info you need to decide.</p>
+            </div>
+            <div class="faq__list">
+                <details class="faq__item reveal" open>
+                    <summary class="faq__question">
+                        <h3>What concert should I travel to this weekend?</h3>
+                        <span class="faq__icon" aria-hidden="true"></span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>ConcertBet analyzes every concert happening within your travel range this weekend and scores each one across four dimensions: <strong>feasibility</strong> (can you realistically get there and back?), <strong>quality</strong> (is the artist worth traveling for?), <strong>urgency</strong> (will you get another chance to see them?), and <strong>nightlife payoff</strong> (what's the city like after the show?). Enter your location and budget, and we show you ranked trips you can actually pull off in 48&ndash;72 hours. No scrolling through calendars. Just decisions.</p>
+                    </div>
+                </details>
+                <details class="faq__item reveal">
+                    <summary class="faq__question">
+                        <h3>What are the best concerts within 300km this weekend?</h3>
+                        <span class="faq__icon" aria-hidden="true"></span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>Within a 300km radius, you can typically pull off a same-day or one-night concert trip. ConcertBet filters every concert in your 300km zone, checks ticket availability, calculates drive or train time, and pairs each show with nearby nightlife and safe return options. This is the "quick strike" zone &mdash; you can see an amazing show and be back in your own bed without taking Monday off. Perfect for impulse decisions and spontaneous Friday night energy.</p>
+                    </div>
+                </details>
+                <details class="faq__item reveal">
+                    <summary class="faq__question">
+                        <h3>What are the best concerts within 800km this weekend?</h3>
+                        <span class="faq__icon" aria-hidden="true"></span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>An 800km range opens up flight-distance concerts &mdash; this is the sweet spot for weekend concert travel. ConcertBet finds every concert within 800km of your location, factors in flight or fast train costs, checks hotel availability for Friday and Saturday nights, and builds a complete trip package: travel, tickets, accommodation, and nightlife pairing. These are full 48&ndash;72 hour weekends in a new city, built around a live show. The kind of trip that becomes a story.</p>
+                    </div>
+                </details>
+                <details class="faq__item reveal">
+                    <summary class="faq__question">
+                        <h3>Is it worth traveling to see a specific artist this weekend?</h3>
+                        <span class="faq__icon" aria-hidden="true"></span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>ConcertBet's feasibility scoring answers this directly. We calculate the total cost (tickets + travel + hotel), time investment, venue reputation, the city's nightlife scene after the show, and crucially &mdash; whether you'll get another chance to see them nearby anytime soon. If the artist rarely tours your region, the venue is incredible, and the city has a great after-show scene, the answer is almost always yes. High score = worth it. Low score = wait for the next one.</p>
+                    </div>
+                </details>
+                <details class="faq__item reveal">
+                    <summary class="faq__question">
+                        <h3>What's the best last-minute concert trip I can book right now?</h3>
+                        <span class="faq__icon" aria-hidden="true"></span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>ConcertBet's urgency ranking system surfaces concerts happening in the next 24&ndash;72 hours that still have available tickets, bookable travel, and hotel rooms. We don't show you sold-out shows or trips where the logistics have already fallen apart. The best last-minute trips are ones where everything aligns: incredible artist, electric city, and a weekend that comes together fast. ConcertBet is built for the "should I just go?" moment.</p>
+                    </div>
+                </details>
+                <details class="faq__item reveal">
+                    <summary class="faq__question">
+                        <h3>What concerts can I travel to for under $500 this weekend?</h3>
+                        <span class="faq__icon" aria-hidden="true"></span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>ConcertBet's budget mode calculates the total all-in cost of every possible concert trip: tickets, transportation (flight, train, or drive), one night of accommodation, and a nightlife budget. We show you every trip under $500 ranked by value &mdash; meaning the best overall experience per dollar spent. You'd be surprised how many world-class concert weekends fit under $500 when you know where to look and book smart.</p>
+                    </div>
+                </details>
+                <details class="faq__item reveal">
+                    <summary class="faq__question">
+                        <h3>What city should I fly to for the best concert + nightlife combo this weekend?</h3>
+                        <span class="faq__icon" aria-hidden="true"></span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>ConcertBet pairs every concert with the host city's nightlife depth score. Cities like Berlin, London, Toronto, Mexico City, and Tokyo have world-class nightlife ecosystems that transform a concert into a full weekend experience. We map pregame-to-afterparty routes so your night doesn't end when the encore does. The best concert + nightlife combos happen when a great show lands in a city that keeps the energy going until sunrise.</p>
+                    </div>
+                </details>
+                <details class="faq__item reveal">
+                    <summary class="faq__question">
+                        <h3>Where can I go this weekend for a full concert + afterparty experience?</h3>
+                        <span class="faq__icon" aria-hidden="true"></span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>ConcertBet's Venue + Night Pairing system maps the complete experience: pregame bars and restaurants near the venue, the show itself, afterparty spots that match the concert's energy, and safe return logistics. We know which venues sit in the best late-night districts, which cities have thriving post-show scenes, and how to keep your night going from 6PM pregame to 3AM afterparty without a single dead moment.</p>
+                    </div>
+                </details>
+                <details class="faq__item reveal">
+                    <summary class="faq__question">
+                        <h3>What's the best one-night concert trip I can realistically pull off?</h3>
+                        <span class="faq__icon" aria-hidden="true"></span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>A one-night concert trip means leaving after work on Friday, catching the show, experiencing the city's nightlife, and getting home by Saturday evening or Sunday morning. ConcertBet's safe return logic ensures every one-night trip we suggest is actually doable &mdash; we factor in last trains, early morning flights, drive-back times, and hotel check-out schedules so you never sacrifice your whole weekend for one show.</p>
+                    </div>
+                </details>
+                <details class="faq__item reveal">
+                    <summary class="faq__question">
+                        <h3>What concert trip will feel like a story in five years?</h3>
+                        <span class="faq__icon" aria-hidden="true"></span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>The trips that become legendary stories share common traits: an artist you love performing in a city that surprises you, a venue with character and history, a night that naturally extends past the encore, and the feeling that you almost didn't go. ConcertBet's scoring system identifies these high-potential experiences &mdash; shows in iconic venues, in cities with deep nightlife, at moments of urgency that won't come around again. The best stories start with impulse.</p>
+                    </div>
+                </details>
+                <details class="faq__item reveal">
+                    <summary class="faq__question">
+                        <h3>How do I plan a last-minute concert trip without overthinking it?</h3>
+                        <span class="faq__icon" aria-hidden="true"></span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>That's literally what ConcertBet is built for. Instead of opening five tabs to check tickets, flights, hotels, and restaurant recommendations, ConcertBet scores and ranks every possible concert trip from your current location. We calculate feasibility, show quality, total cost, and nightlife payoff in one view. Pick the top-ranked trip, book through our integrated links, and go. We handle the overthinking part so you can focus on the impulse.</p>
+                    </div>
+                </details>
+                <details class="faq__item reveal">
+                    <summary class="faq__question">
+                        <h3>What concert trip can I pull off without taking Monday off?</h3>
+                        <span class="faq__icon" aria-hidden="true"></span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>ConcertBet's safe return logic was built for exactly this question. We filter for concerts where you can arrive on Saturday, see the show, enjoy the nightlife, and be back home by Sunday evening. Every trip includes precise return time calculations based on transport schedules. We call it the "Monday-proof" filter &mdash; because the best concert trips are the ones that don't cost you a sick day.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="cta" aria-labelledby="cta-heading">
+        <div class="cta__bg">
+            <img src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=1920&q=80&fit=crop"
+                 alt="Electrifying concert crowd with confetti falling and dramatic spotlights"
+                 class="cta__bg-img" loading="lazy">
+            <div class="cta__bg-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="cta__content reveal">
+                <h2 class="cta__title" id="cta-heading">Bet You <span class="gradient-text">Won't Go.</span></h2>
+                <p class="cta__text">Somewhere this weekend, a concert is happening in a city you've never explored, with an afterparty you'd never forget, at a price you can afford. ConcertBet will find it. The only question is whether you'll go.</p>
+                <div class="cta__actions">
+                    <a href="coming-soon.html" class="btn btn--primary btn--xl">
+                        <span>Find My Concert Trip</span>
+                        <svg class="btn__arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+                <p class="cta__subtext">Free to use &middot; No account needed &middot; Updated every hour</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo" aria-label="ConcertBet Home">
+                        <span class="nav__logo-icon">&#9835;</span>
+                        <span class="nav__logo-text">Concert<span class="accent">Bet</span></span>
+                    </a>
+                    <p class="footer__desc">The weekend concert trip generator. Find the best concerts you can realistically travel to this weekend, scored by feasibility, nightlife payoff, and urgency.</p>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__col-title">Discover</h4>
+                    <ul class="footer__links">
+                        <li><a href="coming-soon.html">This Weekend</a></li>
+                        <li><a href="coming-soon.html">Concerts Within 300km</a></li>
+                        <li><a href="coming-soon.html">Concerts Within 800km</a></li>
+                        <li><a href="coming-soon.html">Under $500 Trips</a></li>
+                        <li><a href="coming-soon.html">Last Minute Trips</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__col-title">Cities</h4>
+                    <ul class="footer__links">
+                        <li><a href="coming-soon.html">London</a></li>
+                        <li><a href="coming-soon.html">Berlin</a></li>
+                        <li><a href="coming-soon.html">Toronto</a></li>
+                        <li><a href="coming-soon.html">New York</a></li>
+                        <li><a href="coming-soon.html">Tokyo</a></li>
+                        <li><a href="coming-soon.html">Mexico City</a></li>
+                        <li><a href="coming-soon.html">Paris</a></li>
+                        <li><a href="coming-soon.html">All Cities</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__col-title">Bet Modes</h4>
+                    <ul class="footer__links">
+                        <li><a href="coming-soon.html">Low Budget</a></li>
+                        <li><a href="coming-soon.html">One Night</a></li>
+                        <li><a href="coming-soon.html">Dance</a></li>
+                        <li><a href="coming-soon.html">Singalong</a></li>
+                        <li><a href="coming-soon.html">Solo</a></li>
+                        <li><a href="coming-soon.html">Date</a></li>
+                        <li><a href="coming-soon.html">Friends</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__col-title">Company</h4>
+                    <ul class="footer__links">
+                        <li><a href="coming-soon.html">About</a></li>
+                        <li><a href="coming-soon.html">How It Works</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="coming-soon.html">Contact</a></li>
+                        <li><a href="coming-soon.html">Privacy</a></li>
+                        <li><a href="coming-soon.html">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy">&copy; 2025 ConcertBet. All rights reserved.</p>
+                <p class="footer__ecosystem">Part of the <a href="coming-soon.html">Fantravel</a> ecosystem &middot; <a href="coming-soon.html">FastConcert</a> &middot; <a href="coming-soon.html">PartyConcerts</a> &middot; <a href="coming-soon.html">HotVenues</a> &middot; <a href="coming-soon.html">LimitedTicket</a> &middot; <a href="coming-soon.html">TicketSecret</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>

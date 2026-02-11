@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Coming Soon — ConcertBet | Weekend Concert Trip Generator</title>
+    <meta name="description" content="This feature is coming soon to ConcertBet. We're building the ultimate weekend concert trip generator — scored by feasibility, nightlife payoff, and urgency.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://concertbet.com/coming-soon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Coming Soon — ConcertBet">
+    <meta property="og:description" content="This feature is coming soon. ConcertBet is building the ultimate weekend concert trip generator.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1200&h=630&fit=crop&q=80">
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ---------- Variables ---------- */
+        :root {
+            --bg-primary: #06060b;
+            --bg-card: #16162a;
+            --text-primary: #f0f0f5;
+            --text-secondary: #a0a0b8;
+            --text-muted: #6b6b82;
+            --accent-violet: #7c3aed;
+            --accent-pink: #ec4899;
+            --accent-amber: #f59e0b;
+            --gradient-primary: linear-gradient(135deg, #7c3aed 0%, #ec4899 50%, #f59e0b 100%);
+            --border-color: rgba(255, 255, 255, 0.06);
+            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --font-display: 'Space Grotesk', -apple-system, sans-serif;
+            --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+            --radius-full: 9999px;
+            --radius-lg: 20px;
+            --radius-md: 12px;
+            --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* ---------- Reset ---------- */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            min-height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { color: inherit; text-decoration: none; }
+
+        ::selection {
+            background: rgba(124, 58, 237, 0.4);
+            color: #fff;
+        }
+
+        /* ---------- Background ---------- */
+        .bg {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .bg__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.15) saturate(1.2) blur(2px);
+        }
+
+        .bg__overlay {
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse at 30% 40%, rgba(124, 58, 237, 0.15) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 60%, rgba(236, 72, 153, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 50%, transparent 30%, rgba(6, 6, 11, 0.95) 100%);
+        }
+
+        /* ---------- Floating Orbs ---------- */
+        .orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.3;
+            animation: float 20s ease-in-out infinite;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .orb--1 {
+            width: 400px;
+            height: 400px;
+            background: var(--accent-violet);
+            top: 20%;
+            left: -10%;
+            animation-delay: 0s;
+        }
+
+        .orb--2 {
+            width: 300px;
+            height: 300px;
+            background: var(--accent-pink);
+            bottom: 10%;
+            right: -5%;
+            animation-delay: -7s;
+        }
+
+        .orb--3 {
+            width: 200px;
+            height: 200px;
+            background: var(--accent-amber);
+            top: 60%;
+            left: 30%;
+            animation-delay: -14s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            25% { transform: translate(30px, -40px) scale(1.05); }
+            50% { transform: translate(-20px, 20px) scale(0.95); }
+            75% { transform: translate(15px, 30px) scale(1.02); }
+        }
+
+        /* ---------- Content ---------- */
+        .page {
+            position: relative;
+            z-index: 1;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: clamp(2rem, 6vw, 4rem) clamp(1rem, 4vw, 2rem);
+            text-align: center;
+        }
+
+        /* ---------- Nav ---------- */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 1rem clamp(1rem, 4vw, 2rem);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(6, 6, 11, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .nav__logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav__logo-icon {
+            font-size: 1.5rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav__logo-text {
+            font-family: var(--font-display);
+            font-size: 1.35rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .nav__logo-text .accent {
+            color: var(--accent-violet);
+        }
+
+        .nav__back {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: color 0.3s var(--ease-out);
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius-full);
+            border: 1px solid var(--border-color);
+        }
+
+        .nav__back:hover {
+            color: var(--text-primary);
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+
+        /* ---------- Main Content ---------- */
+        .content {
+            max-width: 600px;
+            animation: fadeUp 1s var(--ease-out) both;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .content__tag {
+            display: inline-block;
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--accent-amber);
+            background: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.2);
+            padding: 0.4rem 1.1rem;
+            border-radius: var(--radius-full);
+            margin-bottom: 2rem;
+            animation: fadeUp 1s var(--ease-out) 0.2s both;
+        }
+
+        .content__title {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            margin-bottom: 1.25rem;
+            animation: fadeUp 1s var(--ease-out) 0.3s both;
+        }
+
+        .gradient-text {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .content__text {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 2.5rem;
+            animation: fadeUp 1s var(--ease-out) 0.4s both;
+        }
+
+        /* ---------- Email Form ---------- */
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            max-width: 440px;
+            margin: 0 auto 2rem;
+            animation: fadeUp 1s var(--ease-out) 0.5s both;
+        }
+
+        @media (min-width: 480px) {
+            .form {
+                flex-direction: row;
+            }
+        }
+
+        .form__input {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-full);
+            padding: 0.85rem 1.25rem;
+            font-family: var(--font-primary);
+            font-size: 0.95rem;
+            color: var(--text-primary);
+            outline: none;
+            transition: all 0.3s var(--ease-out);
+            min-height: 48px;
+        }
+
+        .form__input::placeholder {
+            color: var(--text-muted);
+        }
+
+        .form__input:focus {
+            border-color: var(--accent-violet);
+            box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+        }
+
+        .form__btn {
+            background: var(--gradient-primary);
+            color: #fff;
+            border: none;
+            border-radius: var(--radius-full);
+            padding: 0.85rem 1.75rem;
+            font-family: var(--font-primary);
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.3s var(--ease-out);
+            min-height: 48px;
+            box-shadow: 0 4px 20px rgba(124, 58, 237, 0.3);
+        }
+
+        .form__btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(124, 58, 237, 0.4);
+        }
+
+        .form__btn:active {
+            transform: translateY(0);
+        }
+
+        /* ---------- Features Preview ---------- */
+        .features {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            max-width: 500px;
+            margin: 0 auto;
+            animation: fadeUp 1s var(--ease-out) 0.6s both;
+        }
+
+        @media (min-width: 480px) {
+            .features {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .feature {
+            background: rgba(22, 22, 42, 0.6);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 1rem 1.25rem;
+            text-align: left;
+            transition: all 0.3s var(--ease-out);
+        }
+
+        .feature:hover {
+            border-color: rgba(124, 58, 237, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .feature__title {
+            font-family: var(--font-display);
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .feature__desc {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        /* ---------- Footer ---------- */
+        .footer {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 1.5rem clamp(1rem, 4vw, 2rem);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer__text {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .footer__text a {
+            color: var(--text-secondary);
+            transition: color 0.3s;
+        }
+
+        .footer__text a:hover {
+            color: var(--accent-violet);
+        }
+
+        /* ---------- Reduced Motion ---------- */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+
+            .orb {
+                animation: none;
+            }
+        }
+
+        /* ---------- Safe Areas ---------- */
+        @supports (padding: env(safe-area-inset-top)) {
+            .nav {
+                padding-top: calc(1rem + env(safe-area-inset-top));
+            }
+
+            .footer {
+                padding-bottom: calc(1.5rem + env(safe-area-inset-bottom));
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Background -->
+    <div class="bg" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1920&q=60&fit=crop"
+             alt=""
+             class="bg__img"
+             loading="eager">
+        <div class="bg__overlay"></div>
+    </div>
+
+    <!-- Floating Orbs -->
+    <div class="orb orb--1" aria-hidden="true"></div>
+    <div class="orb orb--2" aria-hidden="true"></div>
+    <div class="orb orb--3" aria-hidden="true"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" aria-label="Navigation">
+        <a href="/" class="nav__logo" aria-label="ConcertBet Home">
+            <span class="nav__logo-icon">&#9835;</span>
+            <span class="nav__logo-text">Concert<span class="accent">Bet</span></span>
+        </a>
+        <a href="/" class="nav__back" aria-label="Back to homepage">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Home
+        </a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="page">
+        <div class="content">
+            <span class="content__tag">Coming Soon</span>
+            <h1 class="content__title">Something <span class="gradient-text">Legendary</span> Is Loading</h1>
+            <p class="content__text">We're building the future of weekend concert travel. This page is part of the ConcertBet experience &mdash; a decision engine that finds the best concerts you can realistically travel to, scores them, and helps you book the whole trip. Stay tuned.</p>
+
+            <form class="form" action="#" onsubmit="event.preventDefault(); this.querySelector('button').textContent = 'You\'re In!'; this.querySelector('input').disabled = true;">
+                <input type="email" class="form__input" placeholder="Enter your email for early access" aria-label="Email address for early access" required>
+                <button type="submit" class="form__btn">Notify Me</button>
+            </form>
+
+            <div class="features">
+                <div class="feature">
+                    <div class="feature__title">Weekend Trips</div>
+                    <div class="feature__desc">Concerts scored by feasibility, nightlife, and urgency</div>
+                </div>
+                <div class="feature">
+                    <div class="feature__title">48&ndash;72 Hour Window</div>
+                    <div class="feature__desc">Full trip packages built for your weekend</div>
+                </div>
+                <div class="feature">
+                    <div class="feature__title">Night Pairing</div>
+                    <div class="feature__desc">Pregame, show, afterparty &amp; safe return routes</div>
+                </div>
+                <div class="feature">
+                    <div class="feature__title">Bet Modes</div>
+                    <div class="feature__desc">Budget, solo, dance, date, friends &amp; more</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer__text">&copy; 2025 <a href="/">ConcertBet</a> &mdash; Part of the Fantravel ecosystem. Bet you won't go.</p>
+    </footer>
+</body>
+</html>
