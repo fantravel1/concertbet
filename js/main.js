@@ -822,6 +822,23 @@
     /* ---------- Initial Artist Render ---------- */
     renderArtists(true);
 
+    /* ---------- Newsletter Form ---------- */
+    var newsletterForm = document.getElementById('newsletterForm');
+    if (newsletterForm) {
+        newsletterForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            var input = newsletterForm.querySelector('.newsletter__input');
+            var submitBtn = newsletterForm.querySelector('.newsletter__submit');
+            if (input && input.value.trim()) {
+                submitBtn.innerHTML = '<span>Subscribed!</span>';
+                submitBtn.style.pointerEvents = 'none';
+                input.disabled = true;
+                input.value = '';
+                input.placeholder = 'You\'re in! Check your inbox Thursday.';
+            }
+        });
+    }
+
     /* ---------- Re-observe new reveal elements ---------- */
     if ('IntersectionObserver' in window) {
         var newRevealElements = document.querySelectorAll('.reveal:not(.revealed)');

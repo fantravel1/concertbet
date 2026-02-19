@@ -204,7 +204,7 @@
                 <a href="coming-soon.html" class="nav__link" role="menuitem">This Weekend</a>
                 <a href="coming-soon.html" class="nav__link" role="menuitem">Cities</a>
                 <a href="#artists" class="nav__link" role="menuitem">Artists</a>
-                <a href="coming-soon.html" class="nav__link" role="menuitem">Bet Modes</a>
+                <a href="#venues" class="nav__link" role="menuitem">Venues</a>
                 <a href="#faq" class="nav__link" role="menuitem">FAQ</a>
                 <a href="#trip-builder" class="nav__cta" role="menuitem">Build My Trip</a>
             </div>
@@ -750,7 +750,7 @@
             </div>
             <div class="artists__search-wrap reveal">
                 <svg class="artists__search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                <input type="text" class="artists__search" placeholder="Search 219 artists..." aria-label="Search artists">
+                <input type="text" class="artists__search" placeholder="Search 298 artists..." aria-label="Search artists">
             </div>
             <div class="artists__filters reveal">
                 <button class="artists__filter-btn artists__filter-btn--active" data-genre="all">All</button>
@@ -763,6 +763,10 @@
                 <button class="artists__filter-btn" data-genre="latin">Latin</button>
                 <button class="artists__filter-btn" data-genre="metal">Metal</button>
                 <button class="artists__filter-btn" data-genre="country">Country</button>
+                <button class="artists__filter-btn" data-genre="afrobeats">Afrobeats</button>
+                <button class="artists__filter-btn" data-genre="punk">Punk</button>
+                <button class="artists__filter-btn" data-genre="jazz">Jazz</button>
+                <button class="artists__filter-btn" data-genre="folk">Folk</button>
             </div>
             <div class="artists__grid" id="artists-grid"></div>
             <div class="artists__footer reveal">
@@ -986,6 +990,245 @@
         </div>
     </section>
 
+    <!-- Top Venues -->
+    <section class="venues" id="venues" aria-labelledby="venues-heading">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">World-Class Venues</span>
+                <h2 class="section-title" id="venues-heading">Iconic Stages <span class="gradient-text">Worth Traveling For</span></h2>
+                <p class="section-subtitle">Some venues are destinations in themselves. These are the stages that turn a concert into a pilgrimage.</p>
+            </div>
+            <div class="venues__grid">
+                <div class="venues__card reveal">
+                    <div class="venues__card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=600&q=80&fit=crop" alt="Massive arena stage with dramatic lighting" class="venues__card-img" loading="lazy" width="600" height="300">
+                        <div class="venues__card-overlay"></div>
+                        <span class="venues__card-capacity">20,000</span>
+                    </div>
+                    <div class="venues__card-body">
+                        <h3 class="venues__card-name">Madison Square Garden</h3>
+                        <p class="venues__card-location">New York, USA</p>
+                        <div class="venues__card-tags">
+                            <span class="venues__card-tag">Arena</span>
+                            <span class="venues__card-tag">Iconic</span>
+                            <span class="venues__card-tag">All Genres</span>
+                        </div>
+                        <p class="venues__card-desc">The world's most famous arena. Every artist's dream stage. Located in the heart of Manhattan with endless nightlife within walking distance.</p>
+                    </div>
+                </div>
+                <div class="venues__card reveal">
+                    <div class="venues__card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=600&q=80&fit=crop" alt="Club interior with laser lights" class="venues__card-img" loading="lazy" width="600" height="300">
+                        <div class="venues__card-overlay"></div>
+                        <span class="venues__card-capacity">1,500</span>
+                    </div>
+                    <div class="venues__card-body">
+                        <h3 class="venues__card-name">Berghain</h3>
+                        <p class="venues__card-location">Berlin, Germany</p>
+                        <div class="venues__card-tags">
+                            <span class="venues__card-tag">Club</span>
+                            <span class="venues__card-tag">Techno</span>
+                            <span class="venues__card-tag">Legendary</span>
+                        </div>
+                        <p class="venues__card-desc">The cathedral of techno. A former power plant turned into the world's most exclusive nightclub. If you get in, you won't forget it.</p>
+                    </div>
+                </div>
+                <div class="venues__card reveal">
+                    <div class="venues__card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=600&q=80&fit=crop" alt="Outdoor festival crowd" class="venues__card-img" loading="lazy" width="600" height="300">
+                        <div class="venues__card-overlay"></div>
+                        <span class="venues__card-capacity">5,000</span>
+                    </div>
+                    <div class="venues__card-body">
+                        <h3 class="venues__card-name">Brixton Academy</h3>
+                        <p class="venues__card-location">London, UK</p>
+                        <div class="venues__card-tags">
+                            <span class="venues__card-tag">Theatre</span>
+                            <span class="venues__card-tag">Historic</span>
+                            <span class="venues__card-tag">Indie / Rock</span>
+                        </div>
+                        <p class="venues__card-desc">A sloped-floor art deco theatre with legendary acoustics. Every band that matters has played here. South London nightlife on the doorstep.</p>
+                    </div>
+                </div>
+                <div class="venues__card reveal">
+                    <div class="venues__card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=600&q=80&fit=crop" alt="Large concert venue" class="venues__card-img" loading="lazy" width="600" height="300">
+                        <div class="venues__card-overlay"></div>
+                        <span class="venues__card-capacity">14,000</span>
+                    </div>
+                    <div class="venues__card-body">
+                        <h3 class="venues__card-name">Budokan</h3>
+                        <p class="venues__card-location">Tokyo, Japan</p>
+                        <div class="venues__card-tags">
+                            <span class="venues__card-tag">Arena</span>
+                            <span class="venues__card-tag">Historic</span>
+                            <span class="venues__card-tag">All Genres</span>
+                        </div>
+                        <p class="venues__card-desc">Originally built for the 1964 Olympics, Budokan became legendary when The Beatles played here. Now the ultimate achievement for any touring artist.</p>
+                    </div>
+                </div>
+                <div class="venues__card reveal">
+                    <div class="venues__card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1571266028243-3716f02d2d1e?w=600&q=80&fit=crop" alt="Electronic music event" class="venues__card-img" loading="lazy" width="600" height="300">
+                        <div class="venues__card-overlay"></div>
+                        <span class="venues__card-capacity">10,000</span>
+                    </div>
+                    <div class="venues__card-body">
+                        <h3 class="venues__card-name">Red Rocks Amphitheatre</h3>
+                        <p class="venues__card-location">Denver, USA</p>
+                        <div class="venues__card-tags">
+                            <span class="venues__card-tag">Amphitheatre</span>
+                            <span class="venues__card-tag">Natural</span>
+                            <span class="venues__card-tag">Bucket List</span>
+                        </div>
+                        <p class="venues__card-desc">A natural amphitheatre carved between two 300-foot sandstone monoliths. The acoustics, the views, the sunsets. There's nothing else like it.</p>
+                    </div>
+                </div>
+                <div class="venues__card reveal">
+                    <div class="venues__card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=600&q=80&fit=crop" alt="Concert crowd" class="venues__card-img" loading="lazy" width="600" height="300">
+                        <div class="venues__card-overlay"></div>
+                        <span class="venues__card-capacity">2,200</span>
+                    </div>
+                    <div class="venues__card-body">
+                        <h3 class="venues__card-name">Paradiso</h3>
+                        <p class="venues__card-location">Amsterdam, Netherlands</p>
+                        <div class="venues__card-tags">
+                            <span class="venues__card-tag">Church</span>
+                            <span class="venues__card-tag">Intimate</span>
+                            <span class="venues__card-tag">All Genres</span>
+                        </div>
+                        <p class="venues__card-desc">A converted 19th-century church in the heart of Amsterdam. Stained glass, incredible sound, and a city that knows how to keep the night going.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="venues__more reveal">
+                <a href="coming-soon.html" class="btn btn--outline">Explore All Venues</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Testimonials -->
+    <section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Real Stories</span>
+                <h2 class="section-title" id="testimonials-heading">They Actually <span class="gradient-text">Went</span></h2>
+                <p class="section-subtitle">These people took the bet. Here's what happened.</p>
+            </div>
+            <div class="testimonials__grid">
+                <div class="testimonials__card reveal">
+                    <div class="testimonials__card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote class="testimonials__card-quote">"Booked a last-minute trip from Toronto to see Arctic Monkeys in Montreal. $180 all-in. Best decision of the year. The afterparty at Stereo was insane."</blockquote>
+                    <div class="testimonials__card-author">
+                        <div class="testimonials__card-avatar">M</div>
+                        <div>
+                            <p class="testimonials__card-name">Marcus T.</p>
+                            <p class="testimonials__card-trip">Toronto &rarr; Montreal &middot; Arctic Monkeys</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__card reveal">
+                    <div class="testimonials__card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote class="testimonials__card-quote">"I almost didn't go. Friday at 4pm I was still debating. By midnight I was watching Fred Again.. in Berlin with 3,000 strangers. That trip changed how I think about weekends."</blockquote>
+                    <div class="testimonials__card-author">
+                        <div class="testimonials__card-avatar">S</div>
+                        <div>
+                            <p class="testimonials__card-name">Sophie K.</p>
+                            <p class="testimonials__card-trip">London &rarr; Berlin &middot; Fred Again..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__card reveal">
+                    <div class="testimonials__card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote class="testimonials__card-quote">"Used ConcertBet's budget mode to find a $320 all-in trip to see Burna Boy in London. Flew from Dublin, saw the show at the O2, hit Fabric after. Home by Sunday lunch."</blockquote>
+                    <div class="testimonials__card-author">
+                        <div class="testimonials__card-avatar">D</div>
+                        <div>
+                            <p class="testimonials__card-name">Declan O.</p>
+                            <p class="testimonials__card-trip">Dublin &rarr; London &middot; Burna Boy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__card reveal">
+                    <div class="testimonials__card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote class="testimonials__card-quote">"Solo trip to see Tame Impala in Mexico City. The venue, the food, the nightlife in Roma Norte after &mdash; I tell everyone about it. ConcertBet scored it a 94. They were right."</blockquote>
+                    <div class="testimonials__card-author">
+                        <div class="testimonials__card-avatar">A</div>
+                        <div>
+                            <p class="testimonials__card-name">Aisha R.</p>
+                            <p class="testimonials__card-trip">Dallas &rarr; Mexico City &middot; Tame Impala</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__card reveal">
+                    <div class="testimonials__card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote class="testimonials__card-quote">"My friends and I planned a group trip to see Rema in Paris. Six of us, Airbnb in the Marais, concert at the Zenith, then out until 4am in Pigalle. We're already planning the next one."</blockquote>
+                    <div class="testimonials__card-author">
+                        <div class="testimonials__card-avatar">J</div>
+                        <div>
+                            <p class="testimonials__card-name">James W.</p>
+                            <p class="testimonials__card-trip">Manchester &rarr; Paris &middot; Rema</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__card reveal">
+                    <div class="testimonials__card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote class="testimonials__card-quote">"Date night on another level. We flew to Amsterdam to see Khruangbin at Paradiso. Dinner on the canals, the show, cocktails at a speakeasy after. She said yes three months later."</blockquote>
+                    <div class="testimonials__card-author">
+                        <div class="testimonials__card-avatar">T</div>
+                        <div>
+                            <p class="testimonials__card-name">Tyler M.</p>
+                            <p class="testimonials__card-trip">New York &rarr; Amsterdam &middot; Khruangbin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter" id="newsletter" aria-labelledby="newsletter-heading">
+        <div class="container">
+            <div class="newsletter__card reveal">
+                <div class="newsletter__content">
+                    <span class="section-tag">Weekly Drop</span>
+                    <h2 class="newsletter__title" id="newsletter-heading">Get This Weekend's <span class="gradient-text">Best Trips</span></h2>
+                    <p class="newsletter__desc">Every Thursday we send one email: the top 5 concert trips you can realistically pull off this weekend, scored and ready to book. No spam, no noise. Just decisions.</p>
+                    <form class="newsletter__form" id="newsletterForm" onsubmit="return false;">
+                        <div class="newsletter__input-wrap">
+                            <input type="email" class="newsletter__input" placeholder="your@email.com" aria-label="Email address" required>
+                            <button type="submit" class="newsletter__submit">
+                                <span>Subscribe</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </button>
+                        </div>
+                        <p class="newsletter__privacy">Free forever &middot; Unsubscribe anytime &middot; No spam, ever</p>
+                    </form>
+                </div>
+                <div class="newsletter__visual">
+                    <div class="newsletter__preview">
+                        <div class="newsletter__preview-header">
+                            <span class="newsletter__preview-dot"></span>
+                            <span class="newsletter__preview-dot"></span>
+                            <span class="newsletter__preview-dot"></span>
+                        </div>
+                        <div class="newsletter__preview-body">
+                            <p class="newsletter__preview-label">This Weekend's #1 Trip</p>
+                            <p class="newsletter__preview-title">Karol G in Miami</p>
+                            <p class="newsletter__preview-meta">Score: 97 &middot; $340 all-in &middot; Fri&ndash;Sun</p>
+                            <div class="newsletter__preview-bar"></div>
+                            <p class="newsletter__preview-label">Also trending:</p>
+                            <p class="newsletter__preview-item">Hozier in Dublin &middot; 94</p>
+                            <p class="newsletter__preview-item">Fred Again.. in Amsterdam &middot; 92</p>
+                            <p class="newsletter__preview-item">Burna Boy in London &middot; 91</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- AEO / FAQ Section -->
     <section class="faq" id="faq" aria-labelledby="faq-heading">
         <div class="container">
@@ -1193,6 +1436,12 @@
                     <h4 class="footer__col-title">Artists</h4>
                     <ul class="footer__links">
                         <li><a href="#artists">Browse All Artists</a></li>
+                        <li><a href="coming-soon.html">Taylor Swift</a></li>
+                        <li><a href="coming-soon.html">Kendrick Lamar</a></li>
+                        <li><a href="coming-soon.html">Fred Again..</a></li>
+                        <li><a href="coming-soon.html">Burna Boy</a></li>
+                        <li><a href="coming-soon.html">Hozier</a></li>
+                        <li><a href="coming-soon.html">Metallica</a></li>
                     </ul>
                 </div>
                 <div class="footer__col">
