@@ -748,6 +748,10 @@
                 <h2 class="section-title" id="artists-heading">Travel to See <span class="gradient-text">Your Artist</span></h2>
                 <p class="section-subtitle">The best artists on tour right now. Track them, see which cities they're playing, and build a trip around the show.</p>
             </div>
+            <div class="artists__search-wrap reveal">
+                <svg class="artists__search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input type="text" class="artists__search" placeholder="Search 200+ artists..." aria-label="Search artists">
+            </div>
             <div class="artists__filters reveal">
                 <button class="artists__filter-btn artists__filter-btn--active" data-genre="all">All</button>
                 <button class="artists__filter-btn" data-genre="pop">Pop</button>
@@ -755,182 +759,18 @@
                 <button class="artists__filter-btn" data-genre="hiphop">Hip-Hop</button>
                 <button class="artists__filter-btn" data-genre="electronic">Electronic</button>
                 <button class="artists__filter-btn" data-genre="indie">Indie</button>
+                <button class="artists__filter-btn" data-genre="rnb">R&B</button>
+                <button class="artists__filter-btn" data-genre="latin">Latin</button>
+                <button class="artists__filter-btn" data-genre="metal">Metal</button>
+                <button class="artists__filter-btn" data-genre="country">Country</button>
             </div>
-            <div class="artists__grid">
-                <div class="artists__card reveal" data-genre="pop">
-                    <div class="artists__card-img-wrap">
-                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&q=80&fit=crop" alt="Pop artist performing on stage with dramatic lighting" class="artists__card-img" loading="lazy" width="400" height="400">
-                        <div class="artists__card-overlay"></div>
-                        <div class="artists__card-live">
-                            <span class="artists__card-live-dot"></span>
-                            On Tour
-                        </div>
-                    </div>
-                    <div class="artists__card-body">
-                        <h3 class="artists__card-name">Dua Lipa</h3>
-                        <span class="artists__card-genre">Pop</span>
-                        <div class="artists__card-stats">
-                            <div class="artists__card-stat">
-                                <span class="artists__card-stat-num">12</span>
-                                <span class="artists__card-stat-label">Shows Left</span>
-                            </div>
-                            <div class="artists__card-stat">
-                                <span class="artists__card-stat-num">8</span>
-                                <span class="artists__card-stat-label">Cities</span>
-                            </div>
-                        </div>
-                        <div class="artists__card-cities">London &middot; Berlin &middot; Paris &middot; Barcelona</div>
-                        <button class="artists__follow-btn" data-artist="dua-lipa" aria-label="Follow Dua Lipa">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                            <span>Follow</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="artists__card reveal" data-genre="electronic">
-                    <div class="artists__card-img-wrap">
-                        <img src="https://images.unsplash.com/photo-1571266028243-3716f02d2d1e?w=400&q=80&fit=crop" alt="Electronic DJ performing at festival with laser show" class="artists__card-img" loading="lazy" width="400" height="400">
-                        <div class="artists__card-overlay"></div>
-                        <div class="artists__card-live">
-                            <span class="artists__card-live-dot"></span>
-                            On Tour
-                        </div>
-                    </div>
-                    <div class="artists__card-body">
-                        <h3 class="artists__card-name">Fred Again..</h3>
-                        <span class="artists__card-genre">Electronic</span>
-                        <div class="artists__card-stats">
-                            <div class="artists__card-stat">
-                                <span class="artists__card-stat-num">18</span>
-                                <span class="artists__card-stat-label">Shows Left</span>
-                            </div>
-                            <div class="artists__card-stat">
-                                <span class="artists__card-stat-num">14</span>
-                                <span class="artists__card-stat-label">Cities</span>
-                            </div>
-                        </div>
-                        <div class="artists__card-cities">Berlin &middot; Amsterdam &middot; London &middot; Ibiza</div>
-                        <button class="artists__follow-btn" data-artist="fred-again" aria-label="Follow Fred Again">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                            <span>Follow</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="artists__card reveal" data-genre="rock">
-                    <div class="artists__card-img-wrap">
-                        <img src="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?w=400&q=80&fit=crop" alt="Rock band performing live with intense guitar solo" class="artists__card-img" loading="lazy" width="400" height="400">
-                        <div class="artists__card-overlay"></div>
-                        <div class="artists__card-live">
-                            <span class="artists__card-live-dot"></span>
-                            On Tour
-                        </div>
-                    </div>
-                    <div class="artists__card-body">
-                        <h3 class="artists__card-name">Arctic Monkeys</h3>
-                        <span class="artists__card-genre">Rock</span>
-                        <div class="artists__card-stats">
-                            <div class="artists__card-stat">
-                                <span class="artists__card-stat-num">8</span>
-                                <span class="artists__card-stat-label">Shows Left</span>
-                            </div>
-                            <div class="artists__card-stat">
-                                <span class="artists__card-stat-num">6</span>
-                                <span class="artists__card-stat-label">Cities</span>
-                            </div>
-                        </div>
-                        <div class="artists__card-cities">London &middot; Manchester &middot; Dublin &middot; Glasgow</div>
-                        <button class="artists__follow-btn" data-artist="arctic-monkeys" aria-label="Follow Arctic Monkeys">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                            <span>Follow</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="artists__card reveal" data-genre="hiphop">
-                    <div class="artists__card-img-wrap">
-                        <img src="https://images.unsplash.com/photo-1508854710579-5cecc3a9ff17?w=400&q=80&fit=crop" alt="Hip-hop artist performing with dramatic stage production" class="artists__card-img" loading="lazy" width="400" height="400">
-                        <div class="artists__card-overlay"></div>
-                        <div class="artists__card-live">
-                            <span class="artists__card-live-dot"></span>
-                            On Tour
-                        </div>
-                    </div>
-                    <div class="artists__card-body">
-                        <h3 class="artists__card-name">Kendrick Lamar</h3>
-                        <span class="artists__card-genre">Hip-Hop</span>
-                        <div class="artists__card-stats">
-                            <div class="artists__card-stat">
-                                <span class="artists__card-stat-num">22</span>
-                                <span class="artists__card-stat-label">Shows Left</span>
-                            </div>
-                            <div class="artists__card-stat">
-                                <span class="artists__card-stat-num">16</span>
-                                <span class="artists__card-stat-label">Cities</span>
-                            </div>
-                        </div>
-                        <div class="artists__card-cities">New York &middot; LA &middot; Toronto &middot; London</div>
-                        <button class="artists__follow-btn" data-artist="kendrick-lamar" aria-label="Follow Kendrick Lamar">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                            <span>Follow</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="artists__card reveal" data-genre="indie">
-                    <div class="artists__card-img-wrap">
-                        <img src="https://images.unsplash.com/photo-1501612780327-45045538702b?w=400&q=80&fit=crop" alt="Indie band performing at intimate venue with warm lighting" class="artists__card-img" loading="lazy" width="400" height="400">
-                        <div class="artists__card-overlay"></div>
-                        <div class="artists__card-live">
-                            <span class="artists__card-live-dot"></span>
-                            On Tour
-                        </div>
-                    </div>
-                    <div class="artists__card-body">
-                        <h3 class="artists__card-name">Tame Impala</h3>
-                        <span class="artists__card-genre">Indie</span>
-                        <div class="artists__card-stats">
-                            <div class="artists__card-stat">
-                                <span class="artists__card-stat-num">10</span>
-                                <span class="artists__card-stat-label">Shows Left</span>
-                            </div>
-                            <div class="artists__card-stat">
-                                <span class="artists__card-stat-num">9</span>
-                                <span class="artists__card-stat-label">Cities</span>
-                            </div>
-                        </div>
-                        <div class="artists__card-cities">Melbourne &middot; Tokyo &middot; Berlin &middot; Mexico City</div>
-                        <button class="artists__follow-btn" data-artist="tame-impala" aria-label="Follow Tame Impala">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                            <span>Follow</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="artists__card reveal" data-genre="pop">
-                    <div class="artists__card-img-wrap">
-                        <img src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=400&q=80&fit=crop" alt="Pop concert with spectacular light production" class="artists__card-img" loading="lazy" width="400" height="400">
-                        <div class="artists__card-overlay"></div>
-                        <div class="artists__card-live">
-                            <span class="artists__card-live-dot"></span>
-                            On Tour
-                        </div>
-                    </div>
-                    <div class="artists__card-body">
-                        <h3 class="artists__card-name">Bad Bunny</h3>
-                        <span class="artists__card-genre">Pop</span>
-                        <div class="artists__card-stats">
-                            <div class="artists__card-stat">
-                                <span class="artists__card-stat-num">30</span>
-                                <span class="artists__card-stat-label">Shows Left</span>
-                            </div>
-                            <div class="artists__card-stat">
-                                <span class="artists__card-stat-num">20</span>
-                                <span class="artists__card-stat-label">Cities</span>
-                            </div>
-                        </div>
-                        <div class="artists__card-cities">Mexico City &middot; Miami &middot; Madrid &middot; San Juan</div>
-                        <button class="artists__follow-btn" data-artist="bad-bunny" aria-label="Follow Bad Bunny">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                            <span>Follow</span>
-                        </button>
-                    </div>
-                </div>
+            <div class="artists__grid" id="artists-grid"></div>
+            <div class="artists__footer reveal">
+                <p class="artists__count">Showing 12 of 50 artists</p>
+                <button class="artists__load-more" aria-label="Load more artists">
+                    Show More <span class="artists__load-more-count">38 more</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
             </div>
         </div>
     </section>
@@ -1352,13 +1192,7 @@
                 <div class="footer__col">
                     <h4 class="footer__col-title">Artists</h4>
                     <ul class="footer__links">
-                        <li><a href="#artists">Dua Lipa</a></li>
-                        <li><a href="#artists">Fred Again..</a></li>
-                        <li><a href="#artists">Arctic Monkeys</a></li>
-                        <li><a href="#artists">Kendrick Lamar</a></li>
-                        <li><a href="#artists">Tame Impala</a></li>
-                        <li><a href="#artists">Bad Bunny</a></li>
-                        <li><a href="#artists">All Artists</a></li>
+                        <li><a href="#artists">Browse All Artists</a></li>
                     </ul>
                 </div>
                 <div class="footer__col">
@@ -1393,6 +1227,7 @@
     </footer>
 
     <!-- JavaScript -->
+    <script src="js/artists-data.js"></script>
     <script src="js/main.js" defer></script>
 </body>
 </html>

@@ -657,62 +657,170 @@
     // Initialize saved count on page load
     updateSavedCount();
 
-    /* ---------- Artist Filters ---------- */
-    var artistFilterBtns = document.querySelectorAll('.artists__filter-btn');
-    var artistCards = document.querySelectorAll('.artists__card');
-
-    artistFilterBtns.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-            var genre = btn.getAttribute('data-genre');
-
-            artistFilterBtns.forEach(function (b) { b.classList.remove('artists__filter-btn--active'); });
-            btn.classList.add('artists__filter-btn--active');
-
-            artistCards.forEach(function (card) {
-                if (genre === 'all' || card.getAttribute('data-genre') === genre) {
-                    card.classList.remove('artists__card--hidden');
-                } else {
-                    card.classList.add('artists__card--hidden');
-                }
-            });
-        });
-    });
-
-    /* ---------- Artist Follow Buttons ---------- */
+    /* ---------- Artist Follow Storage ---------- */
     function getFollowedArtists() {
         try { return JSON.parse(localStorage.getItem('concertbet_follows') || '[]'); }
         catch (e) { return []; }
     }
 
-    var followBtns = document.querySelectorAll('.artists__follow-btn');
-    followBtns.forEach(function (btn) {
-        var artistId = btn.getAttribute('data-artist');
-        var follows = getFollowedArtists();
+    /* ---------- Dynamic Artist Rendering ---------- */
+    var ARTISTS_PER_PAGE = 12;
+    var artistsShown = 0;
+    var currentGenreFilter = 'all';
+    var currentSearchQuery = '';
 
-        if (follows.indexOf(artistId) > -1) {
-            btn.classList.add('artists__follow-btn--following');
-            var label = btn.querySelector('span');
-            if (label) label.textContent = 'Following';
+    function getFilteredArtists() {
+        var data = window.ARTIST_DATA || [];
+        return data.filter(function (artist) {
+            var matchGenre = currentGenreFilter === 'all' || artist.genre === currentGenreFilter;
+            var matchSearch = !currentSearchQuery || artist.name.toLowerCase().indexOf(currentSearchQuery.toLowerCase()) > -1;
+            return matchGenre && matchSearch;
+        });
+    }
+
+    function renderArtistCard(artist) {
+        var follows = getFollowedArtists();
+        var isFollowing = follows.indexOf(artist.slug) > -1;
+        var tourBadge = artist.onTour
+            ? '<div class="artists__card-live"><span class="artists__card-live-dot"></span>On Tour</div>'
+            : '';
+        var fillAttr = isFollowing ? 'currentColor' : 'none';
+        var followClass = isFollowing ? ' artists__follow-btn--following' : '';
+        var followLabel = isFollowing ? 'Following' : 'Follow';
+
+        return '<div class="artists__card" data-genre="' + artist.genre + '">' +
+            '<div class="artists__card-img-wrap">' +
+            '<img src="https://images.unsplash.com/' + artist.img + '?w=400&q=80&fit=crop" alt="' + artist.name + ' performing live" class="artists__card-img" loading="lazy" width="400" height="400">' +
+            '<div class="artists__card-overlay"></div>' +
+            tourBadge +
+            '</div>' +
+            '<div class="artists__card-body">' +
+            '<h3 class="artists__card-name">' + artist.name + '</h3>' +
+            '<span class="artists__card-genre">' + artist.genreLabel + '</span>' +
+            '<div class="artists__card-stats">' +
+            '<div class="artists__card-stat"><span class="artists__card-stat-num">' + artist.shows + '</span><span class="artists__card-stat-label">Shows Left</span></div>' +
+            '<div class="artists__card-stat"><span class="artists__card-stat-num">' + artist.cities + '</span><span class="artists__card-stat-label">Cities</span></div>' +
+            '</div>' +
+            '<div class="artists__card-cities">' + artist.cityList + '</div>' +
+            '<button class="artists__follow-btn' + followClass + '" data-artist="' + artist.slug + '" aria-label="Follow ' + artist.name + '">' +
+            '<svg width="16" height="16" viewBox="0 0 24 24" fill="' + fillAttr + '" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>' +
+            '<span>' + followLabel + '</span>' +
+            '</button>' +
+            '</div></div>';
+    }
+
+    function renderArtists(reset) {
+        var grid = document.getElementById('artists-grid');
+        if (!grid) return;
+        var filtered = getFilteredArtists();
+
+        if (reset) {
+            grid.innerHTML = '';
+            artistsShown = 0;
         }
 
-        btn.addEventListener('click', function () {
-            var follows = getFollowedArtists();
-            var idx = follows.indexOf(artistId);
-            var label = btn.querySelector('span');
+        var batch = filtered.slice(artistsShown, artistsShown + ARTISTS_PER_PAGE);
+        var fragment = document.createDocumentFragment();
+        var temp = document.createElement('div');
 
-            if (idx > -1) {
-                follows.splice(idx, 1);
-                btn.classList.remove('artists__follow-btn--following');
-                if (label) label.textContent = 'Follow';
+        batch.forEach(function (artist) {
+            temp.innerHTML = renderArtistCard(artist);
+            fragment.appendChild(temp.firstChild);
+        });
+
+        grid.appendChild(fragment);
+        artistsShown += batch.length;
+
+        updateArtistFooter(filtered.length);
+        bindFollowButtons();
+    }
+
+    function updateArtistFooter(totalCount) {
+        var loadMoreBtn = document.querySelector('.artists__load-more');
+        var countEl = document.querySelector('.artists__count');
+        var shown = Math.min(artistsShown, totalCount);
+
+        if (countEl) {
+            countEl.textContent = 'Showing ' + shown + ' of ' + totalCount + ' artists';
+        }
+        if (loadMoreBtn) {
+            var remaining = totalCount - shown;
+            if (remaining <= 0) {
+                loadMoreBtn.style.display = 'none';
             } else {
-                follows.push(artistId);
-                btn.classList.add('artists__follow-btn--following');
-                if (label) label.textContent = 'Following';
+                loadMoreBtn.style.display = '';
+                var countSpan = loadMoreBtn.querySelector('.artists__load-more-count');
+                if (countSpan) countSpan.textContent = remaining + ' more';
             }
+        }
+    }
 
-            localStorage.setItem('concertbet_follows', JSON.stringify(follows));
+    function bindFollowButtons() {
+        var followBtns = document.querySelectorAll('.artists__follow-btn:not([data-bound])');
+        followBtns.forEach(function (btn) {
+            btn.setAttribute('data-bound', 'true');
+            var artistId = btn.getAttribute('data-artist');
+
+            btn.addEventListener('click', function () {
+                var follows = getFollowedArtists();
+                var idx = follows.indexOf(artistId);
+                var label = btn.querySelector('span');
+                var svg = btn.querySelector('svg');
+
+                if (idx > -1) {
+                    follows.splice(idx, 1);
+                    btn.classList.remove('artists__follow-btn--following');
+                    if (label) label.textContent = 'Follow';
+                    if (svg) svg.setAttribute('fill', 'none');
+                } else {
+                    follows.push(artistId);
+                    btn.classList.add('artists__follow-btn--following');
+                    if (label) label.textContent = 'Following';
+                    if (svg) svg.setAttribute('fill', 'currentColor');
+                }
+
+                localStorage.setItem('concertbet_follows', JSON.stringify(follows));
+            });
+        });
+    }
+
+    /* ---------- Artist Filter Buttons ---------- */
+    var artistFilterBtns = document.querySelectorAll('.artists__filter-btn');
+    artistFilterBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var genre = btn.getAttribute('data-genre');
+            currentGenreFilter = genre;
+
+            artistFilterBtns.forEach(function (b) { b.classList.remove('artists__filter-btn--active'); });
+            btn.classList.add('artists__filter-btn--active');
+
+            renderArtists(true);
         });
     });
+
+    /* ---------- Artist Search ---------- */
+    var artistSearchInput = document.querySelector('.artists__search');
+    var searchTimeout;
+    if (artistSearchInput) {
+        artistSearchInput.addEventListener('input', function () {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(function () {
+                currentSearchQuery = artistSearchInput.value.trim();
+                renderArtists(true);
+            }, 250);
+        });
+    }
+
+    /* ---------- Load More Button ---------- */
+    var loadMoreBtn = document.querySelector('.artists__load-more');
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', function () {
+            renderArtists(false);
+        });
+    }
+
+    /* ---------- Initial Artist Render ---------- */
+    renderArtists(true);
 
     /* ---------- Re-observe new reveal elements ---------- */
     if ('IntersectionObserver' in window) {
@@ -725,7 +833,7 @@
     }
 
     /* ---------- Stagger new grid sections ---------- */
-    var newGridSections = document.querySelectorAll('.artists__grid, .trip-builder__options');
+    var newGridSections = document.querySelectorAll('.trip-builder__options');
     newGridSections.forEach(function (grid) {
         var cards = grid.querySelectorAll('.reveal');
         cards.forEach(function (card, index) {
