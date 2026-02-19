@@ -203,10 +203,10 @@
             <div class="nav__menu" id="navMenu" role="menubar">
                 <a href="coming-soon.html" class="nav__link" role="menuitem">This Weekend</a>
                 <a href="coming-soon.html" class="nav__link" role="menuitem">Cities</a>
-                <a href="coming-soon.html" class="nav__link" role="menuitem">Artists</a>
+                <a href="#artists" class="nav__link" role="menuitem">Artists</a>
                 <a href="coming-soon.html" class="nav__link" role="menuitem">Bet Modes</a>
                 <a href="#faq" class="nav__link" role="menuitem">FAQ</a>
-                <a href="coming-soon.html" class="nav__cta" role="menuitem">Find My Trip</a>
+                <a href="#trip-builder" class="nav__cta" role="menuitem">Build My Trip</a>
             </div>
         </div>
     </nav>
@@ -325,6 +325,158 @@
                     </div>
                     <h3 class="step__title">Book &amp; Go</h3>
                     <p class="step__text">Pick your trip and book everything in one flow &mdash; tickets, travel, hotel, and nightlife spots. ConcertBet builds the full route: pregame, show, afterparty, safe return. No overthinking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trip Builder Wizard -->
+    <section class="trip-builder" id="trip-builder" aria-labelledby="trip-builder-heading">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Trip Builder</span>
+                <h2 class="section-title" id="trip-builder-heading">Build Your <span class="gradient-text">Weekend Trip</span></h2>
+                <p class="section-subtitle">Answer four quick questions and we'll generate a personalized concert weekend you can book right now.</p>
+            </div>
+            <div class="trip-builder__card reveal">
+                <div class="trip-builder__progress">
+                    <div class="trip-builder__progress-bar">
+                        <div class="trip-builder__progress-fill" id="tbProgressFill"></div>
+                    </div>
+                    <div class="trip-builder__progress-steps">
+                        <button class="trip-builder__progress-step trip-builder__progress-step--active" data-step="1" aria-label="Step 1: Location">1</button>
+                        <button class="trip-builder__progress-step" data-step="2" aria-label="Step 2: Distance">2</button>
+                        <button class="trip-builder__progress-step" data-step="3" aria-label="Step 3: Budget">3</button>
+                        <button class="trip-builder__progress-step" data-step="4" aria-label="Step 4: Vibe">4</button>
+                    </div>
+                </div>
+
+                <!-- Step 1: Location -->
+                <div class="trip-builder__step trip-builder__step--active" data-step="1">
+                    <h3 class="trip-builder__step-title">Where are you?</h3>
+                    <p class="trip-builder__step-desc">Pick your starting city so we can find concerts within range.</p>
+                    <div class="trip-builder__input-wrap">
+                        <svg class="trip-builder__input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <input type="text" class="trip-builder__input" id="tbCity" placeholder="e.g. London, New York, Berlin..." autocomplete="off">
+                    </div>
+                    <div class="trip-builder__quick-picks">
+                        <span class="trip-builder__quick-label">Popular:</span>
+                        <button class="trip-builder__quick-btn" data-city="London">London</button>
+                        <button class="trip-builder__quick-btn" data-city="New York">New York</button>
+                        <button class="trip-builder__quick-btn" data-city="Berlin">Berlin</button>
+                        <button class="trip-builder__quick-btn" data-city="Toronto">Toronto</button>
+                        <button class="trip-builder__quick-btn" data-city="Tokyo">Tokyo</button>
+                        <button class="trip-builder__quick-btn" data-city="Paris">Paris</button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Distance -->
+                <div class="trip-builder__step" data-step="2">
+                    <h3 class="trip-builder__step-title">How far will you go?</h3>
+                    <p class="trip-builder__step-desc">Choose your travel radius for this weekend.</p>
+                    <div class="trip-builder__options">
+                        <button class="trip-builder__option" data-value="300km">
+                            <span class="trip-builder__option-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/></svg>
+                            </span>
+                            <span class="trip-builder__option-label">300 km</span>
+                            <span class="trip-builder__option-desc">Quick Strike &mdash; same-day or one night</span>
+                        </button>
+                        <button class="trip-builder__option" data-value="800km">
+                            <span class="trip-builder__option-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                            </span>
+                            <span class="trip-builder__option-label">800 km</span>
+                            <span class="trip-builder__option-desc">Full Weekend &mdash; flight or fast train</span>
+                        </button>
+                        <button class="trip-builder__option" data-value="anywhere">
+                            <span class="trip-builder__option-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                            </span>
+                            <span class="trip-builder__option-label">Anywhere</span>
+                            <span class="trip-builder__option-desc">No limits &mdash; show me the best trips on Earth</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Budget -->
+                <div class="trip-builder__step" data-step="3">
+                    <h3 class="trip-builder__step-title">What's your budget?</h3>
+                    <p class="trip-builder__step-desc">All-in cost: tickets, travel, hotel, and nightlife.</p>
+                    <div class="trip-builder__options">
+                        <button class="trip-builder__option" data-value="$200">
+                            <span class="trip-builder__option-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                            </span>
+                            <span class="trip-builder__option-label">Under $200</span>
+                            <span class="trip-builder__option-desc">Budget mode &mdash; hostels, buses, street food</span>
+                        </button>
+                        <button class="trip-builder__option" data-value="$500">
+                            <span class="trip-builder__option-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                            </span>
+                            <span class="trip-builder__option-label">Under $500</span>
+                            <span class="trip-builder__option-desc">Sweet spot &mdash; flights, decent hotel, full night</span>
+                        </button>
+                        <button class="trip-builder__option" data-value="nolimit">
+                            <span class="trip-builder__option-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            </span>
+                            <span class="trip-builder__option-label">No Limit</span>
+                            <span class="trip-builder__option-desc">VIP &mdash; best seats, top hotels, premium everything</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 4: Vibe -->
+                <div class="trip-builder__step" data-step="4">
+                    <h3 class="trip-builder__step-title">What's your vibe?</h3>
+                    <p class="trip-builder__step-desc">Pick your travel mode and we'll match the perfect trip.</p>
+                    <div class="trip-builder__options trip-builder__options--grid">
+                        <button class="trip-builder__option trip-builder__option--compact" data-value="dance">
+                            <span class="trip-builder__option-emoji">&#127926;</span>
+                            <span class="trip-builder__option-label">Dance</span>
+                        </button>
+                        <button class="trip-builder__option trip-builder__option--compact" data-value="singalong">
+                            <span class="trip-builder__option-emoji">&#127908;</span>
+                            <span class="trip-builder__option-label">Singalong</span>
+                        </button>
+                        <button class="trip-builder__option trip-builder__option--compact" data-value="solo">
+                            <span class="trip-builder__option-emoji">&#128694;</span>
+                            <span class="trip-builder__option-label">Solo</span>
+                        </button>
+                        <button class="trip-builder__option trip-builder__option--compact" data-value="date">
+                            <span class="trip-builder__option-emoji">&#10084;&#65039;</span>
+                            <span class="trip-builder__option-label">Date</span>
+                        </button>
+                        <button class="trip-builder__option trip-builder__option--compact" data-value="friends">
+                            <span class="trip-builder__option-emoji">&#127881;</span>
+                            <span class="trip-builder__option-label">Friends</span>
+                        </button>
+                        <button class="trip-builder__option trip-builder__option--compact" data-value="lowbudget">
+                            <span class="trip-builder__option-emoji">&#128176;</span>
+                            <span class="trip-builder__option-label">Low Budget</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <div class="trip-builder__step" data-step="results">
+                    <h3 class="trip-builder__step-title">Your Weekend Trips</h3>
+                    <p class="trip-builder__step-desc" id="tbResultsDesc">Here are your personalized concert weekends.</p>
+                    <div class="trip-builder__results" id="tbResults">
+                        <!-- Dynamically generated -->
+                    </div>
+                    <button class="btn btn--outline trip-builder__restart" id="tbRestart">Start Over</button>
+                </div>
+
+                <!-- Navigation -->
+                <div class="trip-builder__nav">
+                    <button class="btn btn--ghost trip-builder__prev" id="tbPrev" disabled>Back</button>
+                    <button class="btn btn--primary trip-builder__next" id="tbNext">
+                        <span>Next</span>
+                        <svg class="btn__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </button>
                 </div>
             </div>
         </div>
@@ -588,6 +740,201 @@
         </div>
     </section>
 
+    <!-- Artist Travel -->
+    <section class="artists" id="artists" aria-labelledby="artists-heading">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Artist Travel</span>
+                <h2 class="section-title" id="artists-heading">Travel to See <span class="gradient-text">Your Artist</span></h2>
+                <p class="section-subtitle">The best artists on tour right now. Track them, see which cities they're playing, and build a trip around the show.</p>
+            </div>
+            <div class="artists__filters reveal">
+                <button class="artists__filter-btn artists__filter-btn--active" data-genre="all">All</button>
+                <button class="artists__filter-btn" data-genre="pop">Pop</button>
+                <button class="artists__filter-btn" data-genre="rock">Rock</button>
+                <button class="artists__filter-btn" data-genre="hiphop">Hip-Hop</button>
+                <button class="artists__filter-btn" data-genre="electronic">Electronic</button>
+                <button class="artists__filter-btn" data-genre="indie">Indie</button>
+            </div>
+            <div class="artists__grid">
+                <div class="artists__card reveal" data-genre="pop">
+                    <div class="artists__card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&q=80&fit=crop" alt="Pop artist performing on stage with dramatic lighting" class="artists__card-img" loading="lazy" width="400" height="400">
+                        <div class="artists__card-overlay"></div>
+                        <div class="artists__card-live">
+                            <span class="artists__card-live-dot"></span>
+                            On Tour
+                        </div>
+                    </div>
+                    <div class="artists__card-body">
+                        <h3 class="artists__card-name">Dua Lipa</h3>
+                        <span class="artists__card-genre">Pop</span>
+                        <div class="artists__card-stats">
+                            <div class="artists__card-stat">
+                                <span class="artists__card-stat-num">12</span>
+                                <span class="artists__card-stat-label">Shows Left</span>
+                            </div>
+                            <div class="artists__card-stat">
+                                <span class="artists__card-stat-num">8</span>
+                                <span class="artists__card-stat-label">Cities</span>
+                            </div>
+                        </div>
+                        <div class="artists__card-cities">London &middot; Berlin &middot; Paris &middot; Barcelona</div>
+                        <button class="artists__follow-btn" data-artist="dua-lipa" aria-label="Follow Dua Lipa">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                            <span>Follow</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="artists__card reveal" data-genre="electronic">
+                    <div class="artists__card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1571266028243-3716f02d2d1e?w=400&q=80&fit=crop" alt="Electronic DJ performing at festival with laser show" class="artists__card-img" loading="lazy" width="400" height="400">
+                        <div class="artists__card-overlay"></div>
+                        <div class="artists__card-live">
+                            <span class="artists__card-live-dot"></span>
+                            On Tour
+                        </div>
+                    </div>
+                    <div class="artists__card-body">
+                        <h3 class="artists__card-name">Fred Again..</h3>
+                        <span class="artists__card-genre">Electronic</span>
+                        <div class="artists__card-stats">
+                            <div class="artists__card-stat">
+                                <span class="artists__card-stat-num">18</span>
+                                <span class="artists__card-stat-label">Shows Left</span>
+                            </div>
+                            <div class="artists__card-stat">
+                                <span class="artists__card-stat-num">14</span>
+                                <span class="artists__card-stat-label">Cities</span>
+                            </div>
+                        </div>
+                        <div class="artists__card-cities">Berlin &middot; Amsterdam &middot; London &middot; Ibiza</div>
+                        <button class="artists__follow-btn" data-artist="fred-again" aria-label="Follow Fred Again">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                            <span>Follow</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="artists__card reveal" data-genre="rock">
+                    <div class="artists__card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?w=400&q=80&fit=crop" alt="Rock band performing live with intense guitar solo" class="artists__card-img" loading="lazy" width="400" height="400">
+                        <div class="artists__card-overlay"></div>
+                        <div class="artists__card-live">
+                            <span class="artists__card-live-dot"></span>
+                            On Tour
+                        </div>
+                    </div>
+                    <div class="artists__card-body">
+                        <h3 class="artists__card-name">Arctic Monkeys</h3>
+                        <span class="artists__card-genre">Rock</span>
+                        <div class="artists__card-stats">
+                            <div class="artists__card-stat">
+                                <span class="artists__card-stat-num">8</span>
+                                <span class="artists__card-stat-label">Shows Left</span>
+                            </div>
+                            <div class="artists__card-stat">
+                                <span class="artists__card-stat-num">6</span>
+                                <span class="artists__card-stat-label">Cities</span>
+                            </div>
+                        </div>
+                        <div class="artists__card-cities">London &middot; Manchester &middot; Dublin &middot; Glasgow</div>
+                        <button class="artists__follow-btn" data-artist="arctic-monkeys" aria-label="Follow Arctic Monkeys">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                            <span>Follow</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="artists__card reveal" data-genre="hiphop">
+                    <div class="artists__card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1508854710579-5cecc3a9ff17?w=400&q=80&fit=crop" alt="Hip-hop artist performing with dramatic stage production" class="artists__card-img" loading="lazy" width="400" height="400">
+                        <div class="artists__card-overlay"></div>
+                        <div class="artists__card-live">
+                            <span class="artists__card-live-dot"></span>
+                            On Tour
+                        </div>
+                    </div>
+                    <div class="artists__card-body">
+                        <h3 class="artists__card-name">Kendrick Lamar</h3>
+                        <span class="artists__card-genre">Hip-Hop</span>
+                        <div class="artists__card-stats">
+                            <div class="artists__card-stat">
+                                <span class="artists__card-stat-num">22</span>
+                                <span class="artists__card-stat-label">Shows Left</span>
+                            </div>
+                            <div class="artists__card-stat">
+                                <span class="artists__card-stat-num">16</span>
+                                <span class="artists__card-stat-label">Cities</span>
+                            </div>
+                        </div>
+                        <div class="artists__card-cities">New York &middot; LA &middot; Toronto &middot; London</div>
+                        <button class="artists__follow-btn" data-artist="kendrick-lamar" aria-label="Follow Kendrick Lamar">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                            <span>Follow</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="artists__card reveal" data-genre="indie">
+                    <div class="artists__card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1501612780327-45045538702b?w=400&q=80&fit=crop" alt="Indie band performing at intimate venue with warm lighting" class="artists__card-img" loading="lazy" width="400" height="400">
+                        <div class="artists__card-overlay"></div>
+                        <div class="artists__card-live">
+                            <span class="artists__card-live-dot"></span>
+                            On Tour
+                        </div>
+                    </div>
+                    <div class="artists__card-body">
+                        <h3 class="artists__card-name">Tame Impala</h3>
+                        <span class="artists__card-genre">Indie</span>
+                        <div class="artists__card-stats">
+                            <div class="artists__card-stat">
+                                <span class="artists__card-stat-num">10</span>
+                                <span class="artists__card-stat-label">Shows Left</span>
+                            </div>
+                            <div class="artists__card-stat">
+                                <span class="artists__card-stat-num">9</span>
+                                <span class="artists__card-stat-label">Cities</span>
+                            </div>
+                        </div>
+                        <div class="artists__card-cities">Melbourne &middot; Tokyo &middot; Berlin &middot; Mexico City</div>
+                        <button class="artists__follow-btn" data-artist="tame-impala" aria-label="Follow Tame Impala">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                            <span>Follow</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="artists__card reveal" data-genre="pop">
+                    <div class="artists__card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=400&q=80&fit=crop" alt="Pop concert with spectacular light production" class="artists__card-img" loading="lazy" width="400" height="400">
+                        <div class="artists__card-overlay"></div>
+                        <div class="artists__card-live">
+                            <span class="artists__card-live-dot"></span>
+                            On Tour
+                        </div>
+                    </div>
+                    <div class="artists__card-body">
+                        <h3 class="artists__card-name">Bad Bunny</h3>
+                        <span class="artists__card-genre">Pop</span>
+                        <div class="artists__card-stats">
+                            <div class="artists__card-stat">
+                                <span class="artists__card-stat-num">30</span>
+                                <span class="artists__card-stat-label">Shows Left</span>
+                            </div>
+                            <div class="artists__card-stat">
+                                <span class="artists__card-stat-num">20</span>
+                                <span class="artists__card-stat-label">Cities</span>
+                            </div>
+                        </div>
+                        <div class="artists__card-cities">Mexico City &middot; Miami &middot; Madrid &middot; San Juan</div>
+                        <button class="artists__follow-btn" data-artist="bad-bunny" aria-label="Follow Bad Bunny">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                            <span>Follow</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Bet Modes -->
     <section class="modes" id="modes" aria-labelledby="modes-heading">
         <div class="container">
@@ -737,6 +1084,10 @@
                             <span>&middot;</span>
                             <span>Back by Sunday</span>
                         </div>
+                        <button class="showcase__save-btn" data-trip-id="berlin-techno" aria-label="Save trip">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                            <span>Save Trip</span>
+                        </button>
                     </div>
                 </a>
                 <a href="coming-soon.html" class="showcase__card reveal" aria-label="Concert trip to London">
@@ -759,6 +1110,10 @@
                             <span>&middot;</span>
                             <span>Train home Sat</span>
                         </div>
+                        <button class="showcase__save-btn" data-trip-id="london-arena" aria-label="Save trip">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                            <span>Save Trip</span>
+                        </button>
                     </div>
                 </a>
                 <a href="coming-soon.html" class="showcase__card reveal" aria-label="Concert trip to Toronto">
@@ -781,6 +1136,10 @@
                             <span>&middot;</span>
                             <span>Flight Sunday AM</span>
                         </div>
+                        <button class="showcase__save-btn" data-trip-id="toronto-indie" aria-label="Save trip">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                            <span>Save Trip</span>
+                        </button>
                     </div>
                 </a>
             </div>
@@ -931,6 +1290,31 @@
         </div>
     </section>
 
+    <!-- Saved Trips Drawer -->
+    <div class="saved-trips__overlay" id="savedOverlay" aria-hidden="true"></div>
+    <aside class="saved-trips__drawer" id="savedDrawer" aria-label="Saved trips" role="dialog">
+        <div class="saved-trips__header">
+            <h3 class="saved-trips__title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                Saved Trips
+            </h3>
+            <button class="saved-trips__close" id="savedClose" aria-label="Close saved trips">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+        </div>
+        <div class="saved-trips__list" id="savedList">
+            <div class="saved-trips__empty" id="savedEmpty">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                <p>No saved trips yet.</p>
+                <span>Save trips from the showcase or trip builder to see them here.</span>
+            </div>
+        </div>
+    </aside>
+    <button class="saved-trips__toggle" id="savedToggle" aria-label="Open saved trips">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+        <span class="saved-trips__count" id="savedCount" style="display: none;">0</span>
+    </button>
+
     <!-- Footer -->
     <footer class="footer" role="contentinfo">
         <div class="container">
@@ -963,6 +1347,18 @@
                         <li><a href="coming-soon.html">Mexico City</a></li>
                         <li><a href="coming-soon.html">Paris</a></li>
                         <li><a href="coming-soon.html">All Cities</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__col-title">Artists</h4>
+                    <ul class="footer__links">
+                        <li><a href="#artists">Dua Lipa</a></li>
+                        <li><a href="#artists">Fred Again..</a></li>
+                        <li><a href="#artists">Arctic Monkeys</a></li>
+                        <li><a href="#artists">Kendrick Lamar</a></li>
+                        <li><a href="#artists">Tame Impala</a></li>
+                        <li><a href="#artists">Bad Bunny</a></li>
+                        <li><a href="#artists">All Artists</a></li>
                     </ul>
                 </div>
                 <div class="footer__col">
