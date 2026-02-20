@@ -203,10 +203,10 @@
             <div class="nav__menu" id="navMenu" role="menubar">
                 <a href="coming-soon.html" class="nav__link" role="menuitem">This Weekend</a>
                 <a href="coming-soon.html" class="nav__link" role="menuitem">Cities</a>
-                <a href="coming-soon.html" class="nav__link" role="menuitem">Artists</a>
-                <a href="coming-soon.html" class="nav__link" role="menuitem">Bet Modes</a>
+                <a href="#artists" class="nav__link" role="menuitem">Artists</a>
+                <a href="#venues" class="nav__link" role="menuitem">Venues</a>
                 <a href="#faq" class="nav__link" role="menuitem">FAQ</a>
-                <a href="coming-soon.html" class="nav__cta" role="menuitem">Find My Trip</a>
+                <a href="#trip-builder" class="nav__cta" role="menuitem">Build My Trip</a>
             </div>
         </div>
     </nav>
@@ -287,6 +287,109 @@
         </div>
     </section>
 
+    <!-- Trending This Weekend -->
+    <section class="trending" id="trending" aria-labelledby="trending-heading">
+        <div class="container">
+            <div class="trending__header reveal">
+                <div class="trending__header-left">
+                    <span class="trending__live-badge"><span class="trending__live-dot"></span> Live</span>
+                    <h2 class="trending__title" id="trending-heading">Trending This Weekend</h2>
+                </div>
+                <p class="trending__subtitle">Trips people are actually booking right now</p>
+            </div>
+            <div class="trending__grid">
+                <div class="trending__card reveal">
+                    <div class="trending__card-rank">#1</div>
+                    <div class="trending__card-info">
+                        <h3 class="trending__card-artist">Burna Boy</h3>
+                        <p class="trending__card-route">Lagos &rarr; London</p>
+                    </div>
+                    <div class="trending__card-right">
+                        <span class="trending__card-score">97</span>
+                        <span class="trending__card-price">$380</span>
+                    </div>
+                </div>
+                <div class="trending__card reveal">
+                    <div class="trending__card-rank">#2</div>
+                    <div class="trending__card-info">
+                        <h3 class="trending__card-artist">Fred Again..</h3>
+                        <p class="trending__card-route">London &rarr; Amsterdam</p>
+                    </div>
+                    <div class="trending__card-right">
+                        <span class="trending__card-score">95</span>
+                        <span class="trending__card-price">$290</span>
+                    </div>
+                </div>
+                <div class="trending__card reveal">
+                    <div class="trending__card-rank">#3</div>
+                    <div class="trending__card-info">
+                        <h3 class="trending__card-artist">Karol G</h3>
+                        <p class="trending__card-route">New York &rarr; Miami</p>
+                    </div>
+                    <div class="trending__card-right">
+                        <span class="trending__card-score">94</span>
+                        <span class="trending__card-price">$340</span>
+                    </div>
+                </div>
+                <div class="trending__card reveal">
+                    <div class="trending__card-rank">#4</div>
+                    <div class="trending__card-info">
+                        <h3 class="trending__card-artist">Hozier</h3>
+                        <p class="trending__card-route">Manchester &rarr; Dublin</p>
+                    </div>
+                    <div class="trending__card-right">
+                        <span class="trending__card-score">93</span>
+                        <span class="trending__card-price">$220</span>
+                    </div>
+                </div>
+                <div class="trending__card reveal">
+                    <div class="trending__card-rank">#5</div>
+                    <div class="trending__card-info">
+                        <h3 class="trending__card-artist">Tame Impala</h3>
+                        <p class="trending__card-route">LA &rarr; Mexico City</p>
+                    </div>
+                    <div class="trending__card-right">
+                        <span class="trending__card-score">92</span>
+                        <span class="trending__card-price">$410</span>
+                    </div>
+                </div>
+                <div class="trending__card reveal">
+                    <div class="trending__card-rank">#6</div>
+                    <div class="trending__card-info">
+                        <h3 class="trending__card-artist">Rema</h3>
+                        <p class="trending__card-route">Paris &rarr; London</p>
+                    </div>
+                    <div class="trending__card-right">
+                        <span class="trending__card-score">91</span>
+                        <span class="trending__card-price">$260</span>
+                    </div>
+                </div>
+                <div class="trending__card reveal">
+                    <div class="trending__card-rank">#7</div>
+                    <div class="trending__card-info">
+                        <h3 class="trending__card-artist">Noah Kahan</h3>
+                        <p class="trending__card-route">Boston &rarr; Burlington</p>
+                    </div>
+                    <div class="trending__card-right">
+                        <span class="trending__card-score">90</span>
+                        <span class="trending__card-price">$180</span>
+                    </div>
+                </div>
+                <div class="trending__card reveal">
+                    <div class="trending__card-rank">#8</div>
+                    <div class="trending__card-info">
+                        <h3 class="trending__card-artist">Metallica</h3>
+                        <p class="trending__card-route">Denver &rarr; LA</p>
+                    </div>
+                    <div class="trending__card-right">
+                        <span class="trending__card-score">89</span>
+                        <span class="trending__card-price">$520</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- How It Works -->
     <section class="how-it-works" id="how-it-works" aria-labelledby="how-heading">
         <div class="container">
@@ -325,6 +428,158 @@
                     </div>
                     <h3 class="step__title">Book &amp; Go</h3>
                     <p class="step__text">Pick your trip and book everything in one flow &mdash; tickets, travel, hotel, and nightlife spots. ConcertBet builds the full route: pregame, show, afterparty, safe return. No overthinking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trip Builder Wizard -->
+    <section class="trip-builder" id="trip-builder" aria-labelledby="trip-builder-heading">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Trip Builder</span>
+                <h2 class="section-title" id="trip-builder-heading">Build Your <span class="gradient-text">Weekend Trip</span></h2>
+                <p class="section-subtitle">Answer four quick questions and we'll generate a personalized concert weekend you can book right now.</p>
+            </div>
+            <div class="trip-builder__card reveal">
+                <div class="trip-builder__progress">
+                    <div class="trip-builder__progress-bar">
+                        <div class="trip-builder__progress-fill" id="tbProgressFill"></div>
+                    </div>
+                    <div class="trip-builder__progress-steps">
+                        <button class="trip-builder__progress-step trip-builder__progress-step--active" data-step="1" aria-label="Step 1: Location">1</button>
+                        <button class="trip-builder__progress-step" data-step="2" aria-label="Step 2: Distance">2</button>
+                        <button class="trip-builder__progress-step" data-step="3" aria-label="Step 3: Budget">3</button>
+                        <button class="trip-builder__progress-step" data-step="4" aria-label="Step 4: Vibe">4</button>
+                    </div>
+                </div>
+
+                <!-- Step 1: Location -->
+                <div class="trip-builder__step trip-builder__step--active" data-step="1">
+                    <h3 class="trip-builder__step-title">Where are you?</h3>
+                    <p class="trip-builder__step-desc">Pick your starting city so we can find concerts within range.</p>
+                    <div class="trip-builder__input-wrap">
+                        <svg class="trip-builder__input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <input type="text" class="trip-builder__input" id="tbCity" placeholder="e.g. London, New York, Berlin..." autocomplete="off">
+                    </div>
+                    <div class="trip-builder__quick-picks">
+                        <span class="trip-builder__quick-label">Popular:</span>
+                        <button class="trip-builder__quick-btn" data-city="London">London</button>
+                        <button class="trip-builder__quick-btn" data-city="New York">New York</button>
+                        <button class="trip-builder__quick-btn" data-city="Berlin">Berlin</button>
+                        <button class="trip-builder__quick-btn" data-city="Toronto">Toronto</button>
+                        <button class="trip-builder__quick-btn" data-city="Tokyo">Tokyo</button>
+                        <button class="trip-builder__quick-btn" data-city="Paris">Paris</button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Distance -->
+                <div class="trip-builder__step" data-step="2">
+                    <h3 class="trip-builder__step-title">How far will you go?</h3>
+                    <p class="trip-builder__step-desc">Choose your travel radius for this weekend.</p>
+                    <div class="trip-builder__options">
+                        <button class="trip-builder__option" data-value="300km">
+                            <span class="trip-builder__option-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/></svg>
+                            </span>
+                            <span class="trip-builder__option-label">300 km</span>
+                            <span class="trip-builder__option-desc">Quick Strike &mdash; same-day or one night</span>
+                        </button>
+                        <button class="trip-builder__option" data-value="800km">
+                            <span class="trip-builder__option-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                            </span>
+                            <span class="trip-builder__option-label">800 km</span>
+                            <span class="trip-builder__option-desc">Full Weekend &mdash; flight or fast train</span>
+                        </button>
+                        <button class="trip-builder__option" data-value="anywhere">
+                            <span class="trip-builder__option-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                            </span>
+                            <span class="trip-builder__option-label">Anywhere</span>
+                            <span class="trip-builder__option-desc">No limits &mdash; show me the best trips on Earth</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Budget -->
+                <div class="trip-builder__step" data-step="3">
+                    <h3 class="trip-builder__step-title">What's your budget?</h3>
+                    <p class="trip-builder__step-desc">All-in cost: tickets, travel, hotel, and nightlife.</p>
+                    <div class="trip-builder__options">
+                        <button class="trip-builder__option" data-value="$200">
+                            <span class="trip-builder__option-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                            </span>
+                            <span class="trip-builder__option-label">Under $200</span>
+                            <span class="trip-builder__option-desc">Budget mode &mdash; hostels, buses, street food</span>
+                        </button>
+                        <button class="trip-builder__option" data-value="$500">
+                            <span class="trip-builder__option-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                            </span>
+                            <span class="trip-builder__option-label">Under $500</span>
+                            <span class="trip-builder__option-desc">Sweet spot &mdash; flights, decent hotel, full night</span>
+                        </button>
+                        <button class="trip-builder__option" data-value="nolimit">
+                            <span class="trip-builder__option-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            </span>
+                            <span class="trip-builder__option-label">No Limit</span>
+                            <span class="trip-builder__option-desc">VIP &mdash; best seats, top hotels, premium everything</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 4: Vibe -->
+                <div class="trip-builder__step" data-step="4">
+                    <h3 class="trip-builder__step-title">What's your vibe?</h3>
+                    <p class="trip-builder__step-desc">Pick your travel mode and we'll match the perfect trip.</p>
+                    <div class="trip-builder__options trip-builder__options--grid">
+                        <button class="trip-builder__option trip-builder__option--compact" data-value="dance">
+                            <span class="trip-builder__option-emoji">&#127926;</span>
+                            <span class="trip-builder__option-label">Dance</span>
+                        </button>
+                        <button class="trip-builder__option trip-builder__option--compact" data-value="singalong">
+                            <span class="trip-builder__option-emoji">&#127908;</span>
+                            <span class="trip-builder__option-label">Singalong</span>
+                        </button>
+                        <button class="trip-builder__option trip-builder__option--compact" data-value="solo">
+                            <span class="trip-builder__option-emoji">&#128694;</span>
+                            <span class="trip-builder__option-label">Solo</span>
+                        </button>
+                        <button class="trip-builder__option trip-builder__option--compact" data-value="date">
+                            <span class="trip-builder__option-emoji">&#10084;&#65039;</span>
+                            <span class="trip-builder__option-label">Date</span>
+                        </button>
+                        <button class="trip-builder__option trip-builder__option--compact" data-value="friends">
+                            <span class="trip-builder__option-emoji">&#127881;</span>
+                            <span class="trip-builder__option-label">Friends</span>
+                        </button>
+                        <button class="trip-builder__option trip-builder__option--compact" data-value="lowbudget">
+                            <span class="trip-builder__option-emoji">&#128176;</span>
+                            <span class="trip-builder__option-label">Low Budget</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <div class="trip-builder__step" data-step="results">
+                    <h3 class="trip-builder__step-title">Your Weekend Trips</h3>
+                    <p class="trip-builder__step-desc" id="tbResultsDesc">Here are your personalized concert weekends.</p>
+                    <div class="trip-builder__results" id="tbResults">
+                        <!-- Dynamically generated -->
+                    </div>
+                    <button class="btn btn--outline trip-builder__restart" id="tbRestart">Start Over</button>
+                </div>
+
+                <!-- Navigation -->
+                <div class="trip-builder__nav">
+                    <button class="btn btn--ghost trip-builder__prev" id="tbPrev" disabled>Back</button>
+                    <button class="btn btn--primary trip-builder__next" id="tbNext">
+                        <span>Next</span>
+                        <svg class="btn__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </button>
                 </div>
             </div>
         </div>
@@ -581,9 +836,101 @@
                         <p class="cities__card-meta">Accor Arena &middot; Olympia &middot; Pigalle</p>
                     </div>
                 </a>
+                <a href="coming-soon.html" class="cities__card reveal" aria-label="ConcertBet Seoul">
+                    <img src="https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?w=600&q=80&fit=crop"
+                         alt="Seoul cityscape at night with Namsan Tower and neon-lit streets"
+                         class="cities__card-img" loading="lazy" width="600" height="400">
+                    <div class="cities__card-overlay"></div>
+                    <div class="cities__card-content">
+                        <span class="cities__card-label">ConcertBet</span>
+                        <h3 class="cities__card-name">Seoul</h3>
+                        <p class="cities__card-meta">Olympic Hall &middot; YES24 Live &middot; Gangnam &middot; K-Pop Capital</p>
+                    </div>
+                </a>
+                <a href="coming-soon.html" class="cities__card reveal" aria-label="ConcertBet Lagos">
+                    <img src="https://images.unsplash.com/photo-1618828665011-0abd973f7bb8?w=600&q=80&fit=crop"
+                         alt="Lagos city skyline with modern buildings and vibrant streets"
+                         class="cities__card-img" loading="lazy" width="600" height="400">
+                    <div class="cities__card-overlay"></div>
+                    <div class="cities__card-content">
+                        <span class="cities__card-label">ConcertBet</span>
+                        <h3 class="cities__card-name">Lagos</h3>
+                        <p class="cities__card-meta">Eko Convention &middot; Hard Rock &middot; Afrobeats Capital</p>
+                    </div>
+                </a>
+                <a href="coming-soon.html" class="cities__card cities__card--lg reveal" aria-label="ConcertBet S&atilde;o Paulo">
+                    <img src="https://images.unsplash.com/photo-1543059080-f9b1272213d5?w=900&q=80&fit=crop"
+                         alt="S&atilde;o Paulo aerial view with sprawling cityscape at golden hour"
+                         class="cities__card-img" loading="lazy" width="900" height="600">
+                    <div class="cities__card-overlay"></div>
+                    <div class="cities__card-content">
+                        <span class="cities__card-label">ConcertBet</span>
+                        <h3 class="cities__card-name">S&atilde;o Paulo</h3>
+                        <p class="cities__card-meta">Allianz Parque &middot; Audio &middot; Vila Madalena &middot; 200+ shows/week</p>
+                    </div>
+                </a>
+                <a href="coming-soon.html" class="cities__card reveal" aria-label="ConcertBet Amsterdam">
+                    <img src="https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=600&q=80&fit=crop"
+                         alt="Amsterdam canal houses at twilight with lights reflecting on water"
+                         class="cities__card-img" loading="lazy" width="600" height="400">
+                    <div class="cities__card-overlay"></div>
+                    <div class="cities__card-content">
+                        <span class="cities__card-label">ConcertBet</span>
+                        <h3 class="cities__card-name">Amsterdam</h3>
+                        <p class="cities__card-meta">Paradiso &middot; Melkweg &middot; AFAS Live &middot; Leidseplein</p>
+                    </div>
+                </a>
+                <a href="coming-soon.html" class="cities__card reveal" aria-label="ConcertBet Nashville">
+                    <img src="https://images.unsplash.com/photo-1545419913-775e2e654f91?w=600&q=80&fit=crop"
+                         alt="Nashville downtown Broadway with neon honky-tonk signs at night"
+                         class="cities__card-img" loading="lazy" width="600" height="400">
+                    <div class="cities__card-overlay"></div>
+                    <div class="cities__card-content">
+                        <span class="cities__card-label">ConcertBet</span>
+                        <h3 class="cities__card-name">Nashville</h3>
+                        <p class="cities__card-meta">Ryman &middot; Bridgestone Arena &middot; Broadway &middot; Music City</p>
+                    </div>
+                </a>
             </div>
             <div class="cities__more reveal">
                 <a href="coming-soon.html" class="btn btn--outline">Explore All City Hubs</a>
+            </div>
+        </div>
+    </section>
+    <section class="artists" id="artists" aria-labelledby="artists-heading">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Artist Travel</span>
+                <h2 class="section-title" id="artists-heading">Travel to See <span class="gradient-text">Your Artist</span></h2>
+                <p class="section-subtitle">The best artists on tour right now. Track them, see which cities they're playing, and build a trip around the show.</p>
+            </div>
+            <div class="artists__search-wrap reveal">
+                <svg class="artists__search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input type="text" class="artists__search" placeholder="Search 366 artists..." aria-label="Search artists">
+            </div>
+            <div class="artists__filters reveal">
+                <button class="artists__filter-btn artists__filter-btn--active" data-genre="all">All</button>
+                <button class="artists__filter-btn" data-genre="pop">Pop</button>
+                <button class="artists__filter-btn" data-genre="rock">Rock</button>
+                <button class="artists__filter-btn" data-genre="hiphop">Hip-Hop</button>
+                <button class="artists__filter-btn" data-genre="electronic">Electronic</button>
+                <button class="artists__filter-btn" data-genre="indie">Indie</button>
+                <button class="artists__filter-btn" data-genre="rnb">R&B</button>
+                <button class="artists__filter-btn" data-genre="latin">Latin</button>
+                <button class="artists__filter-btn" data-genre="metal">Metal</button>
+                <button class="artists__filter-btn" data-genre="country">Country</button>
+                <button class="artists__filter-btn" data-genre="afrobeats">Afrobeats</button>
+                <button class="artists__filter-btn" data-genre="punk">Punk</button>
+                <button class="artists__filter-btn" data-genre="jazz">Jazz</button>
+                <button class="artists__filter-btn" data-genre="folk">Folk</button>
+            </div>
+            <div class="artists__grid" id="artists-grid"></div>
+            <div class="artists__footer reveal">
+                <p class="artists__count">Showing 12 of 50 artists</p>
+                <button class="artists__load-more" aria-label="Load more artists">
+                    Show More <span class="artists__load-more-count">38 more</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
             </div>
         </div>
     </section>
@@ -737,6 +1084,10 @@
                             <span>&middot;</span>
                             <span>Back by Sunday</span>
                         </div>
+                        <button class="showcase__save-btn" data-trip-id="berlin-techno" aria-label="Save trip">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                            <span>Save Trip</span>
+                        </button>
                     </div>
                 </a>
                 <a href="coming-soon.html" class="showcase__card reveal" aria-label="Concert trip to London">
@@ -759,6 +1110,10 @@
                             <span>&middot;</span>
                             <span>Train home Sat</span>
                         </div>
+                        <button class="showcase__save-btn" data-trip-id="london-arena" aria-label="Save trip">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                            <span>Save Trip</span>
+                        </button>
                     </div>
                 </a>
                 <a href="coming-soon.html" class="showcase__card reveal" aria-label="Concert trip to Toronto">
@@ -781,8 +1136,251 @@
                             <span>&middot;</span>
                             <span>Flight Sunday AM</span>
                         </div>
+                        <button class="showcase__save-btn" data-trip-id="toronto-indie" aria-label="Save trip">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                            <span>Save Trip</span>
+                        </button>
                     </div>
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Venues -->
+    <section class="venues" id="venues" aria-labelledby="venues-heading">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">World-Class Venues</span>
+                <h2 class="section-title" id="venues-heading">Iconic Stages <span class="gradient-text">Worth Traveling For</span></h2>
+                <p class="section-subtitle">Some venues are destinations in themselves. These are the stages that turn a concert into a pilgrimage.</p>
+            </div>
+            <div class="venues__grid">
+                <div class="venues__card reveal">
+                    <div class="venues__card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=600&q=80&fit=crop" alt="Massive arena stage with dramatic lighting" class="venues__card-img" loading="lazy" width="600" height="300">
+                        <div class="venues__card-overlay"></div>
+                        <span class="venues__card-capacity">20,000</span>
+                    </div>
+                    <div class="venues__card-body">
+                        <h3 class="venues__card-name">Madison Square Garden</h3>
+                        <p class="venues__card-location">New York, USA</p>
+                        <div class="venues__card-tags">
+                            <span class="venues__card-tag">Arena</span>
+                            <span class="venues__card-tag">Iconic</span>
+                            <span class="venues__card-tag">All Genres</span>
+                        </div>
+                        <p class="venues__card-desc">The world's most famous arena. Every artist's dream stage. Located in the heart of Manhattan with endless nightlife within walking distance.</p>
+                    </div>
+                </div>
+                <div class="venues__card reveal">
+                    <div class="venues__card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=600&q=80&fit=crop" alt="Club interior with laser lights" class="venues__card-img" loading="lazy" width="600" height="300">
+                        <div class="venues__card-overlay"></div>
+                        <span class="venues__card-capacity">1,500</span>
+                    </div>
+                    <div class="venues__card-body">
+                        <h3 class="venues__card-name">Berghain</h3>
+                        <p class="venues__card-location">Berlin, Germany</p>
+                        <div class="venues__card-tags">
+                            <span class="venues__card-tag">Club</span>
+                            <span class="venues__card-tag">Techno</span>
+                            <span class="venues__card-tag">Legendary</span>
+                        </div>
+                        <p class="venues__card-desc">The cathedral of techno. A former power plant turned into the world's most exclusive nightclub. If you get in, you won't forget it.</p>
+                    </div>
+                </div>
+                <div class="venues__card reveal">
+                    <div class="venues__card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=600&q=80&fit=crop" alt="Outdoor festival crowd" class="venues__card-img" loading="lazy" width="600" height="300">
+                        <div class="venues__card-overlay"></div>
+                        <span class="venues__card-capacity">5,000</span>
+                    </div>
+                    <div class="venues__card-body">
+                        <h3 class="venues__card-name">Brixton Academy</h3>
+                        <p class="venues__card-location">London, UK</p>
+                        <div class="venues__card-tags">
+                            <span class="venues__card-tag">Theatre</span>
+                            <span class="venues__card-tag">Historic</span>
+                            <span class="venues__card-tag">Indie / Rock</span>
+                        </div>
+                        <p class="venues__card-desc">A sloped-floor art deco theatre with legendary acoustics. Every band that matters has played here. South London nightlife on the doorstep.</p>
+                    </div>
+                </div>
+                <div class="venues__card reveal">
+                    <div class="venues__card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=600&q=80&fit=crop" alt="Large concert venue" class="venues__card-img" loading="lazy" width="600" height="300">
+                        <div class="venues__card-overlay"></div>
+                        <span class="venues__card-capacity">14,000</span>
+                    </div>
+                    <div class="venues__card-body">
+                        <h3 class="venues__card-name">Budokan</h3>
+                        <p class="venues__card-location">Tokyo, Japan</p>
+                        <div class="venues__card-tags">
+                            <span class="venues__card-tag">Arena</span>
+                            <span class="venues__card-tag">Historic</span>
+                            <span class="venues__card-tag">All Genres</span>
+                        </div>
+                        <p class="venues__card-desc">Originally built for the 1964 Olympics, Budokan became legendary when The Beatles played here. Now the ultimate achievement for any touring artist.</p>
+                    </div>
+                </div>
+                <div class="venues__card reveal">
+                    <div class="venues__card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1571266028243-3716f02d2d1e?w=600&q=80&fit=crop" alt="Electronic music event" class="venues__card-img" loading="lazy" width="600" height="300">
+                        <div class="venues__card-overlay"></div>
+                        <span class="venues__card-capacity">10,000</span>
+                    </div>
+                    <div class="venues__card-body">
+                        <h3 class="venues__card-name">Red Rocks Amphitheatre</h3>
+                        <p class="venues__card-location">Denver, USA</p>
+                        <div class="venues__card-tags">
+                            <span class="venues__card-tag">Amphitheatre</span>
+                            <span class="venues__card-tag">Natural</span>
+                            <span class="venues__card-tag">Bucket List</span>
+                        </div>
+                        <p class="venues__card-desc">A natural amphitheatre carved between two 300-foot sandstone monoliths. The acoustics, the views, the sunsets. There's nothing else like it.</p>
+                    </div>
+                </div>
+                <div class="venues__card reveal">
+                    <div class="venues__card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=600&q=80&fit=crop" alt="Concert crowd" class="venues__card-img" loading="lazy" width="600" height="300">
+                        <div class="venues__card-overlay"></div>
+                        <span class="venues__card-capacity">2,200</span>
+                    </div>
+                    <div class="venues__card-body">
+                        <h3 class="venues__card-name">Paradiso</h3>
+                        <p class="venues__card-location">Amsterdam, Netherlands</p>
+                        <div class="venues__card-tags">
+                            <span class="venues__card-tag">Church</span>
+                            <span class="venues__card-tag">Intimate</span>
+                            <span class="venues__card-tag">All Genres</span>
+                        </div>
+                        <p class="venues__card-desc">A converted 19th-century church in the heart of Amsterdam. Stained glass, incredible sound, and a city that knows how to keep the night going.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="venues__more reveal">
+                <a href="coming-soon.html" class="btn btn--outline">Explore All Venues</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Testimonials -->
+    <section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Real Stories</span>
+                <h2 class="section-title" id="testimonials-heading">They Actually <span class="gradient-text">Went</span></h2>
+                <p class="section-subtitle">These people took the bet. Here's what happened.</p>
+            </div>
+            <div class="testimonials__grid">
+                <div class="testimonials__card reveal">
+                    <div class="testimonials__card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote class="testimonials__card-quote">"Booked a last-minute trip from Toronto to see Arctic Monkeys in Montreal. $180 all-in. Best decision of the year. The afterparty at Stereo was insane."</blockquote>
+                    <div class="testimonials__card-author">
+                        <div class="testimonials__card-avatar">M</div>
+                        <div>
+                            <p class="testimonials__card-name">Marcus T.</p>
+                            <p class="testimonials__card-trip">Toronto &rarr; Montreal &middot; Arctic Monkeys</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__card reveal">
+                    <div class="testimonials__card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote class="testimonials__card-quote">"I almost didn't go. Friday at 4pm I was still debating. By midnight I was watching Fred Again.. in Berlin with 3,000 strangers. That trip changed how I think about weekends."</blockquote>
+                    <div class="testimonials__card-author">
+                        <div class="testimonials__card-avatar">S</div>
+                        <div>
+                            <p class="testimonials__card-name">Sophie K.</p>
+                            <p class="testimonials__card-trip">London &rarr; Berlin &middot; Fred Again..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__card reveal">
+                    <div class="testimonials__card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote class="testimonials__card-quote">"Used ConcertBet's budget mode to find a $320 all-in trip to see Burna Boy in London. Flew from Dublin, saw the show at the O2, hit Fabric after. Home by Sunday lunch."</blockquote>
+                    <div class="testimonials__card-author">
+                        <div class="testimonials__card-avatar">D</div>
+                        <div>
+                            <p class="testimonials__card-name">Declan O.</p>
+                            <p class="testimonials__card-trip">Dublin &rarr; London &middot; Burna Boy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__card reveal">
+                    <div class="testimonials__card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote class="testimonials__card-quote">"Solo trip to see Tame Impala in Mexico City. The venue, the food, the nightlife in Roma Norte after &mdash; I tell everyone about it. ConcertBet scored it a 94. They were right."</blockquote>
+                    <div class="testimonials__card-author">
+                        <div class="testimonials__card-avatar">A</div>
+                        <div>
+                            <p class="testimonials__card-name">Aisha R.</p>
+                            <p class="testimonials__card-trip">Dallas &rarr; Mexico City &middot; Tame Impala</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__card reveal">
+                    <div class="testimonials__card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote class="testimonials__card-quote">"My friends and I planned a group trip to see Rema in Paris. Six of us, Airbnb in the Marais, concert at the Zenith, then out until 4am in Pigalle. We're already planning the next one."</blockquote>
+                    <div class="testimonials__card-author">
+                        <div class="testimonials__card-avatar">J</div>
+                        <div>
+                            <p class="testimonials__card-name">James W.</p>
+                            <p class="testimonials__card-trip">Manchester &rarr; Paris &middot; Rema</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__card reveal">
+                    <div class="testimonials__card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote class="testimonials__card-quote">"Date night on another level. We flew to Amsterdam to see Khruangbin at Paradiso. Dinner on the canals, the show, cocktails at a speakeasy after. She said yes three months later."</blockquote>
+                    <div class="testimonials__card-author">
+                        <div class="testimonials__card-avatar">T</div>
+                        <div>
+                            <p class="testimonials__card-name">Tyler M.</p>
+                            <p class="testimonials__card-trip">New York &rarr; Amsterdam &middot; Khruangbin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter" id="newsletter" aria-labelledby="newsletter-heading">
+        <div class="container">
+            <div class="newsletter__card reveal">
+                <div class="newsletter__content">
+                    <span class="section-tag">Weekly Drop</span>
+                    <h2 class="newsletter__title" id="newsletter-heading">Get This Weekend's <span class="gradient-text">Best Trips</span></h2>
+                    <p class="newsletter__desc">Every Thursday we send one email: the top 5 concert trips you can realistically pull off this weekend, scored and ready to book. No spam, no noise. Just decisions.</p>
+                    <form class="newsletter__form" id="newsletterForm" onsubmit="return false;">
+                        <div class="newsletter__input-wrap">
+                            <input type="email" class="newsletter__input" placeholder="your@email.com" aria-label="Email address" required>
+                            <button type="submit" class="newsletter__submit">
+                                <span>Subscribe</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </button>
+                        </div>
+                        <p class="newsletter__privacy">Free forever &middot; Unsubscribe anytime &middot; No spam, ever</p>
+                    </form>
+                </div>
+                <div class="newsletter__visual">
+                    <div class="newsletter__preview">
+                        <div class="newsletter__preview-header">
+                            <span class="newsletter__preview-dot"></span>
+                            <span class="newsletter__preview-dot"></span>
+                            <span class="newsletter__preview-dot"></span>
+                        </div>
+                        <div class="newsletter__preview-body">
+                            <p class="newsletter__preview-label">This Weekend's #1 Trip</p>
+                            <p class="newsletter__preview-title">Karol G in Miami</p>
+                            <p class="newsletter__preview-meta">Score: 97 &middot; $340 all-in &middot; Fri&ndash;Sun</p>
+                            <div class="newsletter__preview-bar"></div>
+                            <p class="newsletter__preview-label">Also trending:</p>
+                            <p class="newsletter__preview-item">Hozier in Dublin &middot; 94</p>
+                            <p class="newsletter__preview-item">Fred Again.. in Amsterdam &middot; 92</p>
+                            <p class="newsletter__preview-item">Burna Boy in London &middot; 91</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -931,6 +1529,31 @@
         </div>
     </section>
 
+    <!-- Saved Trips Drawer -->
+    <div class="saved-trips__overlay" id="savedOverlay" aria-hidden="true"></div>
+    <aside class="saved-trips__drawer" id="savedDrawer" aria-label="Saved trips" role="dialog">
+        <div class="saved-trips__header">
+            <h3 class="saved-trips__title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                Saved Trips
+            </h3>
+            <button class="saved-trips__close" id="savedClose" aria-label="Close saved trips">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+        </div>
+        <div class="saved-trips__list" id="savedList">
+            <div class="saved-trips__empty" id="savedEmpty">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                <p>No saved trips yet.</p>
+                <span>Save trips from the showcase or trip builder to see them here.</span>
+            </div>
+        </div>
+    </aside>
+    <button class="saved-trips__toggle" id="savedToggle" aria-label="Open saved trips">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+        <span class="saved-trips__count" id="savedCount" style="display: none;">0</span>
+    </button>
+
     <!-- Footer -->
     <footer class="footer" role="contentinfo">
         <div class="container">
@@ -962,7 +1585,21 @@
                         <li><a href="coming-soon.html">Tokyo</a></li>
                         <li><a href="coming-soon.html">Mexico City</a></li>
                         <li><a href="coming-soon.html">Paris</a></li>
+                        <li><a href="coming-soon.html">Lagos</a></li>
+                        <li><a href="coming-soon.html">Nashville</a></li>
                         <li><a href="coming-soon.html">All Cities</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__col-title">Artists</h4>
+                    <ul class="footer__links">
+                        <li><a href="#artists">Browse All Artists</a></li>
+                        <li><a href="coming-soon.html">Taylor Swift</a></li>
+                        <li><a href="coming-soon.html">Kendrick Lamar</a></li>
+                        <li><a href="coming-soon.html">Fred Again..</a></li>
+                        <li><a href="coming-soon.html">Burna Boy</a></li>
+                        <li><a href="coming-soon.html">Hozier</a></li>
+                        <li><a href="coming-soon.html">Metallica</a></li>
                     </ul>
                 </div>
                 <div class="footer__col">
@@ -997,6 +1634,7 @@
     </footer>
 
     <!-- JavaScript -->
+    <script src="js/artists-data.js"></script>
     <script src="js/main.js" defer></script>
 </body>
 </html>
