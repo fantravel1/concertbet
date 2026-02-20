@@ -338,5 +338,89 @@ window.ARTIST_DATA = [
   { name: 'Placebo', slug: 'placebo', genre: 'rock', genreLabel: 'Rock', shows: 22, cities: 11, cityList: 'London &middot; Paris &middot; Berlin &middot; Mexico City', onTour: true, img: 'photo-1464375117522-1311d6a5b81f' },
   { name: 'The War on Drugs', slug: 'the-war-on-drugs', genre: 'rock', genreLabel: 'Rock', shows: 15, cities: 7, cityList: 'Philadelphia &middot; New York &middot; London &middot; Berlin', onTour: true, img: 'photo-1498038432885-c6f3f1b912ee' },
   { name: 'Wilco', slug: 'wilco', genre: 'rock', genreLabel: 'Rock', shows: 14, cities: 7, cityList: 'Chicago &middot; New York &middot; London &middot; Nashville', onTour: false, img: 'photo-1516450360452-9312f5e86fc7' },
-  { name: 'LCD Soundsystem', slug: 'lcd-soundsystem', genre: 'rock', genreLabel: 'Rock', shows: 10, cities: 5, cityList: 'New York &middot; LA &middot; London &middot; Berlin', onTour: false, img: 'photo-1464375117522-1311d6a5b81f' }
+  { name: 'LCD Soundsystem', slug: 'lcd-soundsystem', genre: 'rock', genreLabel: 'Rock', shows: 10, cities: 5, cityList: 'New York &middot; LA &middot; London &middot; Berlin', onTour: false, img: 'photo-1464375117522-1311d6a5b81f' },
+
+  // ── More Afrobeats (299-308) ──
+  { name: 'Stonebwoy', slug: 'stonebwoy', genre: 'afrobeats', genreLabel: 'Afrobeats', shows: 18, cities: 9, cityList: 'Accra &middot; London &middot; Amsterdam &middot; New York', onTour: true, img: 'photo-1533174072545-7a4b6ad7a6c3' },
+  { name: 'Sarkodie', slug: 'sarkodie', genre: 'afrobeats', genreLabel: 'Afrobeats', shows: 14, cities: 7, cityList: 'Accra &middot; London &middot; New York &middot; Toronto', onTour: true, img: 'photo-1429962714451-bb934ecdc4ec' },
+  { name: 'Black Sherif', slug: 'black-sherif', genre: 'afrobeats', genreLabel: 'Afrobeats', shows: 20, cities: 10, cityList: 'Accra &middot; London &middot; Amsterdam &middot; Berlin', onTour: true, img: 'photo-1524368535928-5b5e00ddc76b' },
+  { name: 'Victony', slug: 'victony', genre: 'afrobeats', genreLabel: 'Afrobeats', shows: 16, cities: 8, cityList: 'Lagos &middot; London &middot; Paris &middot; Toronto', onTour: true, img: 'photo-1533174072545-7a4b6ad7a6c3' },
+  { name: 'Pheelz', slug: 'pheelz', genre: 'afrobeats', genreLabel: 'Afrobeats', shows: 12, cities: 6, cityList: 'Lagos &middot; London &middot; New York &middot; Toronto', onTour: true, img: 'photo-1429962714451-bb934ecdc4ec' },
+  { name: 'Oxlade', slug: 'oxlade', genre: 'afrobeats', genreLabel: 'Afrobeats', shows: 14, cities: 7, cityList: 'Lagos &middot; London &middot; Paris &middot; New York', onTour: true, img: 'photo-1524368535928-5b5e00ddc76b' },
+  { name: 'Joeboy', slug: 'joeboy', genre: 'afrobeats', genreLabel: 'Afrobeats', shows: 10, cities: 5, cityList: 'Lagos &middot; London &middot; Paris &middot; Accra', onTour: false, img: 'photo-1533174072545-7a4b6ad7a6c3' },
+  { name: 'Gyakie', slug: 'gyakie', genre: 'afrobeats', genreLabel: 'Afrobeats', shows: 12, cities: 6, cityList: 'Accra &middot; London &middot; Amsterdam &middot; Lagos', onTour: true, img: 'photo-1429962714451-bb934ecdc4ec' },
+  { name: 'Diamond Platnumz', slug: 'diamond-platnumz', genre: 'afrobeats', genreLabel: 'Afrobeats', shows: 16, cities: 8, cityList: 'Dar es Salaam &middot; Nairobi &middot; London &middot; Dubai', onTour: true, img: 'photo-1524368535928-5b5e00ddc76b' },
+  { name: 'Sauti Sol', slug: 'sauti-sol', genre: 'afrobeats', genreLabel: 'Afrobeats', shows: 14, cities: 7, cityList: 'Nairobi &middot; London &middot; Lagos &middot; Johannesburg', onTour: true, img: 'photo-1533174072545-7a4b6ad7a6c3' },
+
+  // ── More Country (309-316) ──
+  { name: 'Kelsea Ballerini', slug: 'kelsea-ballerini', genre: 'country', genreLabel: 'Country', shows: 22, cities: 10, cityList: 'Nashville &middot; New York &middot; LA &middot; Atlanta', onTour: true, img: 'photo-1506157786151-b8491531f063' },
+  { name: 'Kane Brown', slug: 'kane-brown', genre: 'country', genreLabel: 'Country', shows: 28, cities: 13, cityList: 'Nashville &middot; New York &middot; LA &middot; Dallas', onTour: true, img: 'photo-1501386761578-eac5c94b800a' },
+  { name: 'Jason Aldean', slug: 'jason-aldean', genre: 'country', genreLabel: 'Country', shows: 30, cities: 14, cityList: 'Nashville &middot; Houston &middot; Dallas &middot; Atlanta', onTour: true, img: 'photo-1464375117522-1311d6a5b81f' },
+  { name: 'Carrie Underwood', slug: 'carrie-underwood', genre: 'country', genreLabel: 'Country', shows: 26, cities: 12, cityList: 'Nashville &middot; New York &middot; Las Vegas &middot; LA', onTour: true, img: 'photo-1506157786151-b8491531f063' },
+  { name: 'Eric Church', slug: 'eric-church', genre: 'country', genreLabel: 'Country', shows: 24, cities: 11, cityList: 'Nashville &middot; New York &middot; Charlotte &middot; Dallas', onTour: true, img: 'photo-1501386761578-eac5c94b800a' },
+  { name: 'Brothers Osborne', slug: 'brothers-osborne', genre: 'country', genreLabel: 'Country', shows: 18, cities: 9, cityList: 'Nashville &middot; New York &middot; LA &middot; London', onTour: true, img: 'photo-1464375117522-1311d6a5b81f' },
+  { name: 'Midland', slug: 'midland', genre: 'country', genreLabel: 'Country', shows: 16, cities: 8, cityList: 'Nashville &middot; Austin &middot; Dallas &middot; London', onTour: false, img: 'photo-1506157786151-b8491531f063' },
+  { name: 'Charley Crockett', slug: 'charley-crockett', genre: 'country', genreLabel: 'Country', shows: 20, cities: 10, cityList: 'San Benito &middot; Nashville &middot; Austin &middot; New York', onTour: true, img: 'photo-1501386761578-eac5c94b800a' },
+
+  // ── More Hip-Hop (317-326) ──
+  { name: 'Freddie Gibbs', slug: 'freddie-gibbs', genre: 'hiphop', genreLabel: 'Hip-Hop', shows: 14, cities: 7, cityList: 'Gary &middot; New York &middot; LA &middot; London', onTour: true, img: 'photo-1574391884720-bbc3740c59d1' },
+  { name: 'Cordae', slug: 'cordae', genre: 'hiphop', genreLabel: 'Hip-Hop', shows: 16, cities: 8, cityList: 'Raleigh &middot; New York &middot; LA &middot; London', onTour: true, img: 'photo-1459749411175-04bf5292ceea' },
+  { name: 'Tierra Whack', slug: 'tierra-whack', genre: 'hiphop', genreLabel: 'Hip-Hop', shows: 12, cities: 6, cityList: 'Philadelphia &middot; New York &middot; LA &middot; London', onTour: true, img: 'photo-1508854710579-5cecc3a9ff17' },
+  { name: 'Bas', slug: 'bas', genre: 'hiphop', genreLabel: 'Hip-Hop', shows: 10, cities: 5, cityList: 'New York &middot; LA &middot; London &middot; Paris', onTour: false, img: 'photo-1574391884720-bbc3740c59d1' },
+  { name: 'Doechii', slug: 'doechii', genre: 'hiphop', genreLabel: 'Hip-Hop', shows: 20, cities: 10, cityList: 'Tampa &middot; New York &middot; LA &middot; London', onTour: true, img: 'photo-1459749411175-04bf5292ceea' },
+  { name: 'Ski Mask the Slump God', slug: 'ski-mask-the-slump-god', genre: 'hiphop', genreLabel: 'Hip-Hop', shows: 14, cities: 7, cityList: 'Fort Lauderdale &middot; New York &middot; LA &middot; London', onTour: true, img: 'photo-1508854710579-5cecc3a9ff17' },
+  { name: 'Schoolboy Q', slug: 'schoolboy-q', genre: 'hiphop', genreLabel: 'Hip-Hop', shows: 16, cities: 8, cityList: 'LA &middot; New York &middot; London &middot; Berlin', onTour: true, img: 'photo-1574391884720-bbc3740c59d1' },
+  { name: 'Joey Bada$$', slug: 'joey-badass', genre: 'hiphop', genreLabel: 'Hip-Hop', shows: 18, cities: 9, cityList: 'Brooklyn &middot; LA &middot; London &middot; Amsterdam', onTour: true, img: 'photo-1459749411175-04bf5292ceea' },
+  { name: 'Smino', slug: 'smino', genre: 'hiphop', genreLabel: 'Hip-Hop', shows: 12, cities: 6, cityList: 'St. Louis &middot; New York &middot; LA &middot; Chicago', onTour: true, img: 'photo-1508854710579-5cecc3a9ff17' },
+  { name: 'Ski Aggu', slug: 'ski-aggu', genre: 'hiphop', genreLabel: 'Hip-Hop', shows: 16, cities: 8, cityList: 'Berlin &middot; Hamburg &middot; Munich &middot; Vienna', onTour: true, img: 'photo-1574391884720-bbc3740c59d1' },
+
+  // ── More Electronic (327-334) ──
+  { name: 'Jai Paul', slug: 'jai-paul', genre: 'electronic', genreLabel: 'Electronic', shows: 4, cities: 2, cityList: 'London &middot; Coachella', onTour: false, img: 'photo-1571266028243-3716f02d2d1e' },
+  { name: 'Jon Hopkins', slug: 'jon-hopkins', genre: 'electronic', genreLabel: 'Electronic', shows: 16, cities: 8, cityList: 'London &middot; Berlin &middot; New York &middot; Tokyo', onTour: true, img: 'photo-1514525253161-7a46d19cd819' },
+  { name: 'Kaytranada', slug: 'kaytranada', genre: 'electronic', genreLabel: 'Electronic', shows: 22, cities: 11, cityList: 'Montreal &middot; LA &middot; London &middot; Paris', onTour: true, img: 'photo-1540039155733-5bb30b53aa14' },
+  { name: 'Lane 8', slug: 'lane-8', genre: 'electronic', genreLabel: 'Electronic', shows: 18, cities: 9, cityList: 'Denver &middot; LA &middot; London &middot; Berlin', onTour: true, img: 'photo-1571266028243-3716f02d2d1e' },
+  { name: 'Elderbrook', slug: 'elderbrook', genre: 'electronic', genreLabel: 'Electronic', shows: 14, cities: 7, cityList: 'London &middot; Berlin &middot; Amsterdam &middot; New York', onTour: true, img: 'photo-1514525253161-7a46d19cd819' },
+  { name: 'Ben Böhmer', slug: 'ben-bohmer', genre: 'electronic', genreLabel: 'Electronic', shows: 20, cities: 10, cityList: 'Berlin &middot; London &middot; Ibiza &middot; Amsterdam', onTour: true, img: 'photo-1540039155733-5bb30b53aa14' },
+  { name: 'CamelPhat', slug: 'camelphat', genre: 'electronic', genreLabel: 'Electronic', shows: 24, cities: 12, cityList: 'Liverpool &middot; Ibiza &middot; London &middot; Amsterdam', onTour: true, img: 'photo-1571266028243-3716f02d2d1e' },
+  { name: 'Anyma', slug: 'anyma', genre: 'electronic', genreLabel: 'Electronic', shows: 18, cities: 9, cityList: 'Milan &middot; Ibiza &middot; Las Vegas &middot; London', onTour: true, img: 'photo-1514525253161-7a46d19cd819' },
+
+  // ── More R&B (335-342) ──
+  { name: 'Usher', slug: 'usher', genre: 'rnb', genreLabel: 'R&B', shows: 28, cities: 12, cityList: 'Las Vegas &middot; New York &middot; LA &middot; London', onTour: true, img: 'photo-1565035010268-a3816f98589a' },
+  { name: 'Chris Brown', slug: 'chris-brown', genre: 'rnb', genreLabel: 'R&B', shows: 22, cities: 10, cityList: 'LA &middot; New York &middot; London &middot; Dubai', onTour: true, img: 'photo-1459749411175-04bf5292ceea' },
+  { name: 'Tory Lanez', slug: 'tory-lanez', genre: 'rnb', genreLabel: 'R&B', shows: 8, cities: 4, cityList: 'Toronto &middot; New York &middot; LA &middot; London', onTour: false, img: 'photo-1493225457124-a3eb161ffa5f' },
+  { name: 'Bryson Tiller', slug: 'bryson-tiller', genre: 'rnb', genreLabel: 'R&B', shows: 16, cities: 8, cityList: 'Louisville &middot; New York &middot; LA &middot; London', onTour: true, img: 'photo-1565035010268-a3816f98589a' },
+  { name: 'Tiana Major9', slug: 'tiana-major9', genre: 'rnb', genreLabel: 'R&B', shows: 12, cities: 6, cityList: 'London &middot; New York &middot; LA &middot; Paris', onTour: true, img: 'photo-1459749411175-04bf5292ceea' },
+  { name: 'Sampha', slug: 'sampha', genre: 'rnb', genreLabel: 'R&B', shows: 14, cities: 7, cityList: 'London &middot; New York &middot; Berlin &middot; Tokyo', onTour: true, img: 'photo-1493225457124-a3eb161ffa5f' },
+  { name: 'Muni Long', slug: 'muni-long', genre: 'rnb', genreLabel: 'R&B', shows: 16, cities: 8, cityList: 'LA &middot; New York &middot; Atlanta &middot; London', onTour: true, img: 'photo-1565035010268-a3816f98589a' },
+  { name: 'Chlöe', slug: 'chloe', genre: 'rnb', genreLabel: 'R&B', shows: 10, cities: 5, cityList: 'Atlanta &middot; New York &middot; LA &middot; London', onTour: true, img: 'photo-1459749411175-04bf5292ceea' },
+
+  // ── More Latin (343-350) ──
+  { name: 'Bad Gyal', slug: 'bad-gyal', genre: 'latin', genreLabel: 'Latin', shows: 18, cities: 9, cityList: 'Barcelona &middot; Madrid &middot; Mexico City &middot; Miami', onTour: true, img: 'photo-1533174072545-7a4b6ad7a6c3' },
+  { name: 'Yandel', slug: 'yandel', genre: 'latin', genreLabel: 'Latin', shows: 14, cities: 7, cityList: 'San Juan &middot; Miami &middot; New York &middot; Madrid', onTour: false, img: 'photo-1429962714451-bb934ecdc4ec' },
+  { name: 'Sech', slug: 'sech', genre: 'latin', genreLabel: 'Latin', shows: 16, cities: 8, cityList: 'Panama City &middot; Miami &middot; New York &middot; Madrid', onTour: true, img: 'photo-1524368535928-5b5e00ddc76b' },
+  { name: 'Ryan Castro', slug: 'ryan-castro', genre: 'latin', genreLabel: 'Latin', shows: 20, cities: 10, cityList: 'Medellín &middot; Miami &middot; New York &middot; Madrid', onTour: true, img: 'photo-1533174072545-7a4b6ad7a6c3' },
+  { name: 'Maria Becerra', slug: 'maria-becerra', genre: 'latin', genreLabel: 'Latin', shows: 22, cities: 11, cityList: 'Buenos Aires &middot; Madrid &middot; Miami &middot; Mexico City', onTour: true, img: 'photo-1429962714451-bb934ecdc4ec' },
+  { name: 'Blessd', slug: 'blessd', genre: 'latin', genreLabel: 'Latin', shows: 18, cities: 9, cityList: 'Medellín &middot; Miami &middot; Madrid &middot; Mexico City', onTour: true, img: 'photo-1524368535928-5b5e00ddc76b' },
+  { name: 'Arcangel', slug: 'arcangel', genre: 'latin', genreLabel: 'Latin', shows: 14, cities: 7, cityList: 'San Juan &middot; Miami &middot; New York &middot; Madrid', onTour: true, img: 'photo-1533174072545-7a4b6ad7a6c3' },
+  { name: 'Ivy Queen', slug: 'ivy-queen', genre: 'latin', genreLabel: 'Latin', shows: 12, cities: 6, cityList: 'San Juan &middot; Miami &middot; New York &middot; Mexico City', onTour: false, img: 'photo-1429962714451-bb934ecdc4ec' },
+
+  // ── More Metal (351-358) ──
+  { name: 'Opeth', slug: 'opeth', genre: 'metal', genreLabel: 'Metal', shows: 18, cities: 9, cityList: 'Stockholm &middot; London &middot; New York &middot; Berlin', onTour: true, img: 'photo-1498038432885-c6f3f1b912ee' },
+  { name: 'Meshuggah', slug: 'meshuggah', genre: 'metal', genreLabel: 'Metal', shows: 14, cities: 7, cityList: 'Umeå &middot; London &middot; Berlin &middot; New York', onTour: false, img: 'photo-1540039155733-5bb30b53aa14' },
+  { name: 'Behemoth', slug: 'behemoth', genre: 'metal', genreLabel: 'Metal', shows: 20, cities: 10, cityList: 'Gdańsk &middot; London &middot; Berlin &middot; New York', onTour: true, img: 'photo-1415201364774-f6f0bb35f28f' },
+  { name: 'Trivium', slug: 'trivium', genre: 'metal', genreLabel: 'Metal', shows: 22, cities: 11, cityList: 'Orlando &middot; New York &middot; London &middot; Tokyo', onTour: true, img: 'photo-1498038432885-c6f3f1b912ee' },
+  { name: 'In Flames', slug: 'in-flames', genre: 'metal', genreLabel: 'Metal', shows: 16, cities: 8, cityList: 'Gothenburg &middot; London &middot; Berlin &middot; New York', onTour: true, img: 'photo-1540039155733-5bb30b53aa14' },
+  { name: 'Electric Wizard', slug: 'electric-wizard', genre: 'metal', genreLabel: 'Metal', shows: 8, cities: 4, cityList: 'Dorset &middot; London &middot; Berlin &middot; Brooklyn', onTour: false, img: 'photo-1415201364774-f6f0bb35f28f' },
+  { name: 'Deafheaven', slug: 'deafheaven', genre: 'metal', genreLabel: 'Metal', shows: 14, cities: 7, cityList: 'San Francisco &middot; New York &middot; London &middot; Berlin', onTour: true, img: 'photo-1498038432885-c6f3f1b912ee' },
+  { name: 'Baroness', slug: 'baroness', genre: 'metal', genreLabel: 'Metal', shows: 16, cities: 8, cityList: 'Savannah &middot; New York &middot; London &middot; Berlin', onTour: true, img: 'photo-1540039155733-5bb30b53aa14' },
+
+  // ── More Indie (359-366) ──
+  { name: 'The Smile', slug: 'the-smile', genre: 'indie', genreLabel: 'Indie', shows: 16, cities: 8, cityList: 'London &middot; Berlin &middot; New York &middot; Tokyo', onTour: true, img: 'photo-1501612780327-45045538702b' },
+  { name: 'Diiv', slug: 'diiv', genre: 'indie', genreLabel: 'Indie', shows: 12, cities: 6, cityList: 'New York &middot; LA &middot; London &middot; Berlin', onTour: true, img: 'photo-1506157786151-b8491531f063' },
+  { name: 'Parquet Courts', slug: 'parquet-courts', genre: 'indie', genreLabel: 'Indie', shows: 14, cities: 7, cityList: 'Brooklyn &middot; London &middot; Berlin &middot; LA', onTour: true, img: 'photo-1501386761578-eac5c94b800a' },
+  { name: 'Warpaint', slug: 'warpaint', genre: 'indie', genreLabel: 'Indie', shows: 12, cities: 6, cityList: 'LA &middot; London &middot; Berlin &middot; Mexico City', onTour: false, img: 'photo-1501612780327-45045538702b' },
+  { name: 'The Beths', slug: 'the-beths', genre: 'indie', genreLabel: 'Indie', shows: 16, cities: 8, cityList: 'Auckland &middot; Melbourne &middot; London &middot; New York', onTour: true, img: 'photo-1506157786151-b8491531f063' },
+  { name: 'Horsegirl', slug: 'horsegirl', genre: 'indie', genreLabel: 'Indie', shows: 10, cities: 5, cityList: 'Chicago &middot; New York &middot; London &middot; Berlin', onTour: true, img: 'photo-1501386761578-eac5c94b800a' },
+  { name: 'Wednesday', slug: 'wednesday', genre: 'indie', genreLabel: 'Indie', shows: 14, cities: 7, cityList: 'Asheville &middot; New York &middot; London &middot; LA', onTour: true, img: 'photo-1501612780327-45045538702b' },
+  { name: 'Bar Italia', slug: 'bar-italia', genre: 'indie', genreLabel: 'Indie', shows: 12, cities: 6, cityList: 'London &middot; Berlin &middot; New York &middot; Paris', onTour: true, img: 'photo-1506157786151-b8491531f063' }
 ];
